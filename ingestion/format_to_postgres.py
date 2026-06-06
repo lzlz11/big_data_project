@@ -7,7 +7,7 @@ import os
 import psycopg2
 import psycopg2.extras
 from datetime import datetime, timezone
-from ingestion.date_utils import get_target_date
+from ingestion.date_utils import get_target_dates
 
 DATA_LAKE_BASE = "/opt/airflow/data"
 DB_CONFIG = {"host": "postgres", "port": 5432, "dbname": "airflow", "user": "airflow", "password": "airflow"}
@@ -38,6 +38,20 @@ def setup_schema(conn):
                 ingested_at TIMESTAMPTZ, loaded_at TIMESTAMPTZ DEFAULT NOW()
             );
         """)
+        cur.execute(f"""
+            CREATE TABLE IF NOT EXISTS {SCHEMA}.air_quality_raw (
+                id SERIAL PRIMARY KEY, city_key TEXT, city_name TEXT,
+                ingested_at TIMESTAMPTZ, selected_hour_utc TIMESTAMP,
+                current_pm10 FLOAT, current_pm2_5 FLOAT,
+                current_carbon_monoxide FLOAT,
+                current_nitrogen_dioxide FLOAT,
+                current_sulphur_dioxide FLOAT,
+                current_ozone FLOAT, current_dust FLOAT,
+                current_uv_index FLOAT, current_us_aqi FLOAT,
+                current_european_aqi FLOAT,
+                raw_json JSONB, loaded_at TIMESTAMPTZ DEFAULT NOW()
+            );
+        """)
         conn.commit()
     print("[Format] Schema ready.")
 
@@ -50,6 +64,10 @@ def clear_existing_for_date(conn, date_str):
         """, (date_str,))
         cur.execute(f"""
             DELETE FROM {SCHEMA}.restaurants_raw
+            WHERE (ingested_at AT TIME ZONE 'UTC')::date = %s::date;
+        """, (date_str,))
+        cur.execute(f"""
+            DELETE FROM {SCHEMA}.air_quality_raw
             WHERE (ingested_at AT TIME ZONE 'UTC')::date = %s::date;
         """, (date_str,))
     conn.commit()
@@ -115,14 +133,53 @@ def load_restaurants(conn, date_str):
     return total
 
 
+def load_air_quality(conn, date_str):
+    path = os.path.join(DATA_LAKE_BASE, "raw", "air_quality", date_str)
+    if not os.path.exists(path):
+        return 0
+    count = 0
+    with conn.cursor() as cur:
+        for f in os.listdir(path):
+            if not f.endswith(".json"): continue
+            with open(os.path.join(path, f), encoding="utf-8") as fp:
+                data = json.load(fp)
+            meta = data.get("_metadata", {})
+            current = data.get("current_air_quality", {})
+            cur.execute(f"""
+                INSERT INTO {SCHEMA}.air_quality_raw
+                (city_key, city_name, ingested_at, selected_hour_utc,
+                 current_pm10, current_pm2_5, current_carbon_monoxide,
+                 current_nitrogen_dioxide, current_sulphur_dioxide,
+                 current_ozone, current_dust, current_uv_index,
+                 current_us_aqi, current_european_aqi, raw_json)
+                VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+                ON CONFLICT DO NOTHING;
+            """, (
+                meta.get("city_key"), meta.get("city_name"), meta.get("ingested_at"),
+                meta.get("selected_hour_utc"), current.get("pm10"),
+                current.get("pm2_5"), current.get("carbon_monoxide"),
+                current.get("nitrogen_dioxide"), current.get("sulphur_dioxide"),
+                current.get("ozone"), current.get("dust"), current.get("uv_index"),
+                current.get("us_aqi"), current.get("european_aqi"),
+                json.dumps(data),
+            ))
+            count += 1
+    conn.commit()
+    print(f"[Format] Loaded {count} air quality records.")
+    return count
+
+
 def run_formatting(**kwargs):
-    date_str = get_target_date(kwargs)
+    target_dates = get_target_dates(kwargs)
     conn = get_connection()
     try:
         setup_schema(conn)
-        clear_existing_for_date(conn, date_str)
-        load_weather(conn, date_str)
-        load_restaurants(conn, date_str)
+        for date_str in target_dates:
+            print(f"[Format] Processing target date: {date_str}")
+            clear_existing_for_date(conn, date_str)
+            load_weather(conn, date_str)
+            load_restaurants(conn, date_str)
+            load_air_quality(conn, date_str)
     finally:
         conn.close()
 

@@ -1,0 +1,1429 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-06T14:59:58Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 267671919,
+      "lat": 31.2102276,
+      "lon": 121.4449697,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Zapata's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 322001983,
+      "lat": 31.3175212,
+      "lon": 121.2168906,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 398770157,
+      "lat": 31.2438021,
+      "lon": 121.5824299,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "internet_access": "wlan",
+        "name": "The Journeys Cafe",
+        "name:en": "Da Marco",
+        "name:zh": "大马可意大利餐厅"
+      }
+    },
+    {
+      "type": "node",
+      "id": 401464127,
+      "lat": 31.2204821,
+      "lon": 121.5896159,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "face"
+      }
+    },
+    {
+      "type": "node",
+      "id": 467690367,
+      "lat": 31.3269968,
+      "lon": 121.5279878,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "南翔馒头",
+        "name:en": "Nanxiang Steamed Bun"
+      }
+    },
+    {
+      "type": "node",
+      "id": 469344440,
+      "lat": 31.3170567,
+      "lon": 121.5279193,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:zh": "麦当劳",
+        "brand:zh-Hans": "麦当劳",
+        "cuisine": "burger",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "name:zh-Hans": "麦当劳",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 469344441,
+      "lat": 31.3163384,
+      "lon": 121.5282451,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "zh:肯德基",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 476069274,
+      "lat": 31.2458401,
+      "lon": 121.486049,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Shanghai Morning",
+        "smoking": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 476072686,
+      "lat": 31.3036223,
+      "lon": 121.5100285,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "zh:肯德基",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 476073086,
+      "lat": 31.3019575,
+      "lon": 121.5093419,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Xintianpin"
+      }
+    },
+    {
+      "type": "node",
+      "id": 476779364,
+      "lat": 31.2373423,
+      "lon": 121.4724746,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:zh": "麦当劳",
+        "brand:zh-Hans": "麦当劳",
+        "cuisine": "burger",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "name:zh-Hans": "麦当劳",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 476781766,
+      "lat": 31.2378562,
+      "lon": 121.4766473,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "必胜客",
+        "brand:en": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "brand:zh": "必胜客",
+        "cuisine": "pizza",
+        "name": "必胜客",
+        "name:en": "Pizza Hut",
+        "name:zh": "必胜客"
+      }
+    },
+    {
+      "type": "node",
+      "id": 476783113,
+      "lat": 31.2379812,
+      "lon": 121.4768656,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "吉野家",
+        "brand:en": "Yoshinoya",
+        "brand:ja": "吉野家",
+        "brand:wikidata": "Q776272",
+        "brand:zh": "吉野家",
+        "brand:zh-Hans": "吉野家",
+        "brand:zh-Hant": "吉野家",
+        "cuisine": "beef_bowl",
+        "name": "吉野家",
+        "name:en": "Yoshinoya",
+        "name:ja": "吉野家",
+        "name:zh": "吉野家",
+        "name:zh-Hans": "吉野家",
+        "name:zh-Hant": "吉野家",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 476784282,
+      "lat": 31.2381544,
+      "lon": 121.4763448,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "天惠天",
+        "name:zh": "天惠天",
+        "name:zh-Hans": "天惠天",
+        "name:zh-Hant": "天惠天"
+      }
+    },
+    {
+      "type": "node",
+      "id": 538153171,
+      "lat": 31.2335814,
+      "lon": 121.4664829,
+      "tags": {
+        "addr:city": "上海市",
+        "addr:street": "南京东路",
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "星巴克",
+        "name:de": "Starbucks",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 552679255,
+      "lat": 31.2230891,
+      "lon": 121.4555291,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "滴水洞",
+        "name:en": "Di Shui Dong",
+        "name:zh": "滴水洞",
+        "name:zh-Hans": "滴水洞",
+        "name:zh-Hant": "滴水洞"
+      }
+    },
+    {
+      "type": "node",
+      "id": 552689536,
+      "lat": 31.2212016,
+      "lon": 121.445564,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Nepali Kitchen",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 554000553,
+      "lat": 31.2230791,
+      "lon": 121.4698402,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:de": "Starbucks coffee",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 555627762,
+      "lat": 31.2320692,
+      "lon": 121.4520702,
+      "tags": {
+        "addr:city": "上海市",
+        "addr:housenumber": "258",
+        "addr:street": "奉贤路",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name:en": "Jujube Tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 567444245,
+      "lat": 31.2457366,
+      "lon": 121.5356713,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 573323407,
+      "lat": 31.2368897,
+      "lon": 121.4721637,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "赛百味",
+        "brand:en": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "brand:zh": "赛百味",
+        "cuisine": "sandwich",
+        "name": "赛百味",
+        "name:en": "Subway",
+        "name:zh": "赛百味",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 573323411,
+      "lat": 31.2372116,
+      "lon": 121.4720821,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "必胜客",
+        "brand:en": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:zh": "必胜客",
+        "cuisine": "pizza",
+        "name": "必胜客",
+        "name:en": "Pizza Hut",
+        "name:zh": "必胜客"
+      }
+    },
+    {
+      "type": "node",
+      "id": 574770979,
+      "lat": 31.2208125,
+      "lon": 121.4261613,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 574770982,
+      "lat": 31.2205105,
+      "lon": 121.4263458,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 574770985,
+      "lat": 31.2207833,
+      "lon": 121.4268258,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:de": "Starbucks coffee",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 603091133,
+      "lat": 31.2025393,
+      "lon": 121.5800509,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "丽华快餐",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 625196843,
+      "lat": 31.2855685,
+      "lon": 121.4958143,
+      "tags": {
+        "amenity": "cafe",
+        "name": "第五街咖啡馆",
+        "name:en": "5th Avenue Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 638736457,
+      "lat": 31.237866,
+      "lon": 121.4752428,
+      "tags": {
+        "addr:city": "上海市",
+        "addr:district": "黄浦区",
+        "addr:housenumber": "558号",
+        "addr:street": "南京东路",
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "-1",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "opening_hours": "09:30-22:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 638736460,
+      "lat": 31.2354192,
+      "lon": 121.4671723,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "国际饭店",
+        "name:en": "Park Hotel",
+        "name:zh": "国际饭店",
+        "name:zh-Hans": "国际饭店",
+        "name:zh-Hant": "國際飯店",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 638736461,
+      "lat": 31.2366523,
+      "lon": 121.4713668,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 647522513,
+      "lat": 31.2218438,
+      "lon": 121.4699867,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Zen Life Store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 647522518,
+      "lat": 31.2221466,
+      "lon": 121.4699224,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name:en": "Simply Thai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 647753564,
+      "lat": 31.2296471,
+      "lon": 121.5544297,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 654576866,
+      "lat": 31.2349524,
+      "lon": 121.466646,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "东方既白",
+        "name:en": "Dongfang Jibai",
+        "name:zh": "东方既白"
+      }
+    },
+    {
+      "type": "node",
+      "id": 663546199,
+      "lat": 31.1930061,
+      "lon": 121.3812901,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kun Thai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 663546200,
+      "lat": 31.1932861,
+      "lon": 121.3823182,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Faith's Diner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 663546201,
+      "lat": 31.1932259,
+      "lon": 121.3830262,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Papas bierstube"
+      }
+    },
+    {
+      "type": "node",
+      "id": 663546202,
+      "lat": 31.1933175,
+      "lon": 121.3837003,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name:en": "Simply Thai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 769847577,
+      "lat": 31.1723575,
+      "lon": 121.4254732,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Monolean",
+        "shop": "doityourself"
+      }
+    },
+    {
+      "type": "node",
+      "id": 770414559,
+      "lat": 31.2369582,
+      "lon": 121.4374626,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese"
+      }
+    },
+    {
+      "type": "node",
+      "id": 832930580,
+      "lat": 31.2226536,
+      "lon": 121.4700351,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Paulaner",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 833893262,
+      "lat": 31.1666243,
+      "lon": 121.290787,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lamesa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 837022289,
+      "lat": 31.1965939,
+      "lon": 121.3831099,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "大鱼",
+        "name:en": "Tairyo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 842073995,
+      "lat": 31.1724481,
+      "lon": 121.4123686,
+      "tags": {
+        "addr:housenumber": "402",
+        "addr:street": "桂林路",
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "zh:麦当劳",
+        "brand:zh": "麦当劳",
+        "brand:zh-Hans": "麦当劳",
+        "cuisine": "burger",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "name:zh-Hans": "麦当劳",
+        "phone": "+86 21 6451 0397",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 842073996,
+      "lat": 31.1736827,
+      "lon": 121.4121969,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "必胜客",
+        "brand:en": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "zh:必胜客",
+        "brand:zh": "必胜客",
+        "cuisine": "pizza",
+        "name": "必胜客",
+        "name:en": "Pizza Hut",
+        "name:zh": "必胜客"
+      }
+    },
+    {
+      "type": "node",
+      "id": 891341329,
+      "lat": 31.1707755,
+      "lon": 121.2867025,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pinnochio"
+      }
+    },
+    {
+      "type": "node",
+      "id": 920050391,
+      "lat": 31.225477,
+      "lon": 121.4227127,
+      "tags": {
+        "addr:housenumber": "351",
+        "addr:street": "长宁路",
+        "amenity": "fast_food",
+        "cuisine": "dumplings;noodles;rice",
+        "description": "Suzhou Eatery",
+        "name": "老盛兴苏州汤包馆"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1066163639,
+      "lat": 31.0406846,
+      "lon": 121.2548781,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1066173050,
+      "lat": 31.1943466,
+      "lon": 121.3727031,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "barbecue",
+        "name": "Bubba's Texas Bar-B-Q"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1166150609,
+      "lat": 31.3074554,
+      "lon": 121.5094864,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1166150610,
+      "lat": 31.307201,
+      "lon": 121.5093818,
+      "tags": {
+        "amenity": "fast_food",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1168461427,
+      "lat": 31.2123506,
+      "lon": 121.4432497,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "hotpot",
+        "name": "火锅餐厅",
+        "name:en": "Hot Pot King"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1172174591,
+      "lat": 31.2348345,
+      "lon": 121.4666775,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "85度C",
+        "brand:en": "85°C Bakery Cafe",
+        "brand:wikidata": "Q4644852",
+        "brand:zh": "85度C",
+        "cuisine": "coffee_shop",
+        "name": "85度C",
+        "name:en": "85°C Bakery Cafe",
+        "name:zh": "85度C",
+        "opening_hours": "24/7",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1174646043,
+      "lat": 31.2410175,
+      "lon": 121.5087659,
+      "tags": {
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Passo",
+        "name:en": "Passo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1242407722,
+      "lat": 31.2131039,
+      "lon": 121.5484331,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "达美乐比萨",
+        "brand:en": "Domino's",
+        "brand:wikidata": "Q839466",
+        "brand:zh": "达美乐比萨",
+        "cuisine": "pizza",
+        "name": "达美乐比萨",
+        "name:en": "Domino's",
+        "name:zh": "达美乐比萨",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1317175519,
+      "lat": 31.21174,
+      "lon": 121.4332585,
+      "tags": {
+        "addr:city": "上海市",
+        "addr:housenumber": "38",
+        "addr:street": "高邮路",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name:en": "Lost Heaven",
+        "website": "http://lostheaven.com.cn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1317210444,
+      "lat": 31.2140547,
+      "lon": 121.4752258,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "american",
+        "name:en": "Munchies"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1317213794,
+      "lat": 31.2210188,
+      "lon": 121.46145,
+      "tags": {
+        "amenity": "cafe",
+        "name": "hoF",
+        "name:en": "hoF"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1317213799,
+      "lat": 31.2198902,
+      "lon": 121.4579524,
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Citta Cafe",
+        "name:en": "Citta Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1317286639,
+      "lat": 31.2323994,
+      "lon": 121.3982506,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Dining Hall West"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1317286641,
+      "lat": 31.2263936,
+      "lon": 121.4003591,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Liwa Dining Hall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1317286642,
+      "lat": 31.2309229,
+      "lon": 121.403866,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Dining Hall East"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1362449535,
+      "lat": 31.2357372,
+      "lon": 121.5770341,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1441441254,
+      "lat": 31.1962667,
+      "lon": 121.4323992,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Wagas",
+        "brand:en": "Wagas",
+        "brand:wikidata": "Q104668297",
+        "brand:zh": "沃歌斯",
+        "cuisine": "coffee_shop",
+        "diet:vegetarian": "yes",
+        "name": "Wagas",
+        "name:en": "Wagas",
+        "name:zh": "沃歌斯",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1441441258,
+      "lat": 31.1967056,
+      "lon": 121.4323892,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Alla Torre"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1441441261,
+      "lat": 31.197244,
+      "lon": 121.4325601,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Element Fresh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1441441264,
+      "lat": 31.1972929,
+      "lon": 121.4320939,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1441441273,
+      "lat": 31.1969809,
+      "lon": 121.4323115,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Da Marco"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1441441277,
+      "lat": 31.1964164,
+      "lon": 121.4319682,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1448514543,
+      "lat": 31.0078141,
+      "lon": 121.4189752,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "zh:麦当劳",
+        "brand:zh": "麦当劳",
+        "brand:zh-Hans": "麦当劳",
+        "cuisine": "burger",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "name:zh-Hans": "麦当劳",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1449321186,
+      "lat": 31.2115394,
+      "lon": 121.4445796,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1449321187,
+      "lat": 31.2128515,
+      "lon": 121.4493754,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1449321189,
+      "lat": 31.2111265,
+      "lon": 121.4457597,
+      "tags": {
+        "amenity": "cafe",
+        "name": "老麦咖啡馆",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1449321192,
+      "lat": 31.2111192,
+      "lon": 121.4439952,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1460662321,
+      "lat": 31.2196664,
+      "lon": 121.4484131,
+      "tags": {
+        "addr:city": "上海市",
+        "addr:housenumber": "291",
+        "addr:street": "fumin lu",
+        "amenity": "restaurant",
+        "name:en": "Noodle Bull"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1460663878,
+      "lat": 31.2210659,
+      "lon": 121.4640203,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Sculpting in Time Cafe",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1460664402,
+      "lat": 31.2086299,
+      "lon": 121.4344693,
+      "tags": {
+        "addr:housenumber": "376",
+        "addr:street": "wukang lu",
+        "amenity": "cafe",
+        "name:en": "Coffee Tree",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1462584424,
+      "lat": 31.2195956,
+      "lon": 121.4704252,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Lavazza",
+        "brand:wikidata": "Q543750",
+        "cuisine": "coffee_shop",
+        "name": "Lavazza",
+        "name:en": "Lavazza",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1469068216,
+      "lat": 31.2343807,
+      "lon": 121.4445127,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1469068223,
+      "lat": 31.2341055,
+      "lon": 121.4447702,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1471781217,
+      "lat": 31.3233357,
+      "lon": 121.4314939,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473995280,
+      "lat": 31.2302301,
+      "lon": 121.5006604,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "浦江一号"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1489291111,
+      "lat": 31.2275747,
+      "lon": 121.4736036,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Gloria Jean's",
+        "brand:wikidata": "Q2666365",
+        "cuisine": "coffee_shop",
+        "name": "Gloria Jean's",
+        "name:en": "Gloria Jeans",
+        "official_name": "Gloria Jean's Coffees",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1489404204,
+      "lat": 31.2328623,
+      "lon": 121.4971843,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Hailong Haixian Fang"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1489420310,
+      "lat": 31.2380778,
+      "lon": 121.5195201,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1490128494,
+      "lat": 31.2369632,
+      "lon": 121.5154889,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:zh": "麦当劳",
+        "brand:zh-Hans": "麦当劳",
+        "cuisine": "burger",
+        "diet:meat": "yes",
+        "drive_through": "no",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "name:zh-Hans": "麦当劳",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1508314456,
+      "lat": 31.1781405,
+      "lon": 121.3768327,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:zh": "麦当劳",
+        "brand:zh-Hans": "麦当劳",
+        "cuisine": "burger",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "name:zh-Hans": "麦当劳",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1548518743,
+      "lat": 31.2273256,
+      "lon": 121.4909063,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1555170552,
+      "lat": 31.2354641,
+      "lon": 121.4733788,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1562104164,
+      "lat": 31.2379261,
+      "lon": 121.4939193,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Hooters",
+        "brand:wikidata": "Q1025921",
+        "brand:wikipedia": "en:Hooters",
+        "cuisine": "burger",
+        "name": "Hooters",
+        "name:en": "Hooters Pudong, Shanghai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1562116462,
+      "lat": 31.2195459,
+      "lon": 121.4700699,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Urban Soup Kitchen",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1562116864,
+      "lat": 31.2263689,
+      "lon": 121.4723478,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Fomo",
+        "name:en": "Fomo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1562116872,
+      "lat": 31.2266441,
+      "lon": 121.4724714,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pankoo",
+        "name:en": "Pankoo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1562119162,
+      "lat": 31.2203286,
+      "lon": 121.4598096,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lei Restaurant",
+        "name:en": "Lei Restaurant",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1611966780,
+      "lat": 31.1364281,
+      "lon": 121.5747424,
+      "tags": {
+        "amenity": "fast_food",
+        "int_name": "Ramen Noudles",
+        "name": "味千拉面"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1611966812,
+      "lat": 31.136986,
+      "lon": 121.5749919,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1611966843,
+      "lat": 31.1360493,
+      "lon": 121.5748122,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "ramen",
+        "name": "康师傅牛肉拉面"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1611966847,
+      "lat": 31.1368161,
+      "lon": 121.5755927,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "永和豆浆"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1611966854,
+      "lat": 31.1365865,
+      "lon": 121.5756195,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "乔家珊小吃"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1611986117,
+      "lat": 31.1379342,
+      "lon": 121.5786504,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "iCaffe"
+      }
+    }
+  ],
+  "_overpass_urls": [
+    "https://overpass-api.de/api/interpreter"
+  ],
+  "_sample": {
+    "strategy": "fixed_osm_node_id_panel",
+    "sample_file": "/opt/airflow/data/sample/restaurants/shanghai.json",
+    "sample_limit": 100,
+    "requested_ids": 100,
+    "returned_elements": 100
+  },
+  "_metadata": {
+    "city_key": "shanghai",
+    "city_name": "Shanghai",
+    "ingested_at": "2026-05-27T12:00:00+00:00",
+    "source": "Overpass API (OpenStreetMap)",
+    "overpass_urls": [
+      "https://overpass-api.de/api/interpreter"
+    ],
+    "target_date": "2026-05-27",
+    "sampled": true,
+    "sample_mode": "fixed",
+    "sample_limit": 100,
+    "total_elements": 100
+  }
+}

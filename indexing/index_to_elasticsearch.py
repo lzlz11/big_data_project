@@ -21,6 +21,12 @@ INDEXES = {
             "precipitation_mm": {"type": "float"}, "wind_speed_kmh": {"type": "float"},
             "weather_description": {"type": "keyword"}, "weather_category": {"type": "keyword"},
             "outdoor_comfort_score": {"type": "float"}, "total_venues": {"type": "integer"},
+            "pm10": {"type": "float"}, "pm2_5": {"type": "float"},
+            "carbon_monoxide": {"type": "float"}, "nitrogen_dioxide": {"type": "float"},
+            "sulphur_dioxide": {"type": "float"}, "ozone": {"type": "float"},
+            "dust": {"type": "float"}, "uv_index": {"type": "float"},
+            "us_aqi": {"type": "float"}, "european_aqi": {"type": "float"},
+            "air_quality_category": {"type": "keyword"}, "air_quality_score": {"type": "float"},
             "restaurant_count": {"type": "integer"}, "cafe_count": {"type": "integer"},
             "fast_food_count": {"type": "integer"}, "cuisine_diversity": {"type": "integer"},
             "venue_density_score": {"type": "float"}, "cuisine_diversity_score": {"type": "float"},
@@ -37,7 +43,25 @@ INDEXES = {
             "ingestion_date": {"type": "date"}, "dining_score": {"type": "float"},
             "outdoor_comfort_score": {"type": "float"}, "temperature_c": {"type": "float"},
             "precipitation_mm": {"type": "float"}, "weather_category": {"type": "keyword"},
+            "air_quality_score": {"type": "float"}, "european_aqi": {"type": "float"},
             "score_change": {"type": "float"}, "avg_score_7d": {"type": "float"},
+            "avg_air_quality_score_7d": {"type": "float"},
+        }
+    },
+    "city_air_quality": {
+        "table": "stg_air_quality",
+        "id_fields": ["city_key", "ingestion_date"],
+        "mappings": {
+            "city_key": {"type": "keyword"}, "city_name": {"type": "keyword"},
+            "ingestion_date": {"type": "date"}, "ingested_at_utc": {"type": "date"},
+            "selected_hour_utc": {"type": "date"},
+            "pm10": {"type": "float"}, "pm2_5": {"type": "float"},
+            "carbon_monoxide": {"type": "float"}, "nitrogen_dioxide": {"type": "float"},
+            "sulphur_dioxide": {"type": "float"}, "ozone": {"type": "float"},
+            "dust": {"type": "float"}, "uv_index": {"type": "float"},
+            "us_aqi": {"type": "float"}, "european_aqi": {"type": "float"},
+            "air_quality_category": {"type": "keyword"},
+            "air_quality_score": {"type": "float"},
         }
     },
     "city_cuisine_analysis": {
@@ -62,6 +86,8 @@ def run_indexing(**kwargs):
             if not es.indices.exists(index=index_name):
                 es.indices.create(index=index_name, body={"mappings": {"properties": config["mappings"]}})
                 print(f"[ES] Created index: {index_name}")
+            else:
+                es.indices.put_mapping(index=index_name, body={"properties": config["mappings"]})
 
             with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
                 cur.execute(f"SELECT * FROM {SCHEMA}.{config['table']};")

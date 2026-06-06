@@ -17,6 +17,10 @@ WITH weather AS (
     SELECT * FROM "airflow"."dbt_weather_restaurants"."stg_weather"
 ),
 
+air_quality AS (
+    SELECT * FROM "airflow"."dbt_weather_restaurants"."stg_air_quality"
+),
+
 restaurant_stats AS (
     SELECT
         city_key,
@@ -45,6 +49,18 @@ combined AS (
         w.weather_description,
         w.weather_category,
         w.outdoor_comfort_score,
+        a.pm10,
+        a.pm2_5,
+        a.carbon_monoxide,
+        a.nitrogen_dioxide,
+        a.sulphur_dioxide,
+        a.ozone,
+        a.dust,
+        a.uv_index,
+        a.us_aqi,
+        a.european_aqi,
+        COALESCE(a.air_quality_category, 'unknown') AS air_quality_category,
+        COALESCE(a.air_quality_score, 5) AS air_quality_score,
         COALESCE(r.total_venues, 0)        AS total_venues,
         COALESCE(r.restaurant_count, 0)    AS restaurant_count,
         COALESCE(r.cafe_count, 0)          AS cafe_count,
@@ -53,6 +69,9 @@ combined AS (
         ROUND(LEAST(COALESCE(r.total_venues, 0)::numeric / 100.0, 1.0) * 10, 1) AS venue_density_score,
         ROUND(LEAST(COALESCE(r.cuisine_diversity, 0)::numeric / 20.0, 1.0) * 10, 1) AS cuisine_diversity_score
     FROM weather w
+    LEFT JOIN air_quality a
+        ON w.city_key = a.city_key
+       AND w.ingestion_date = a.ingestion_date
     LEFT JOIN restaurant_stats r
         ON w.city_key = r.city_key
        AND w.ingestion_date = r.ingestion_date
@@ -61,22 +80,25 @@ combined AS (
 final AS (
     SELECT *,
         ROUND(
-            (outdoor_comfort_score * 0.40)
-            + (venue_density_score * 0.30)
-            + (cuisine_diversity_score * 0.30)
+            (outdoor_comfort_score * 0.35)
+            + (air_quality_score * 0.25)
+            + (venue_density_score * 0.20)
+            + (cuisine_diversity_score * 0.20)
         , 2) AS dining_score,
         CASE
-            WHEN (outdoor_comfort_score*0.4 + venue_density_score*0.3 + cuisine_diversity_score*0.3) >= 7
+            WHEN air_quality_score <= 2
+                THEN 'Poor air quality - prefer indoor dining'
+            WHEN (outdoor_comfort_score*0.35 + air_quality_score*0.25 + venue_density_score*0.20 + cuisine_diversity_score*0.20) >= 7
                 THEN 'Excellent day to dine out!'
-            WHEN (outdoor_comfort_score*0.4 + venue_density_score*0.3 + cuisine_diversity_score*0.3) >= 5
+            WHEN (outdoor_comfort_score*0.35 + air_quality_score*0.25 + venue_density_score*0.20 + cuisine_diversity_score*0.20) >= 5
                 THEN 'Good day - consider outdoor seating'
-            WHEN (outdoor_comfort_score*0.4 + venue_density_score*0.3 + cuisine_diversity_score*0.3) >= 3
+            WHEN (outdoor_comfort_score*0.35 + air_quality_score*0.25 + venue_density_score*0.20 + cuisine_diversity_score*0.20) >= 3
                 THEN 'Moderate - prefer indoor restaurants'
             ELSE 'Bad weather - stay in or order delivery'
         END AS dining_recommendation,
         RANK() OVER (
             PARTITION BY ingestion_date
-            ORDER BY (outdoor_comfort_score*0.40 + venue_density_score*0.30 + cuisine_diversity_score*0.30) DESC
+            ORDER BY (outdoor_comfort_score*0.35 + air_quality_score*0.25 + venue_density_score*0.20 + cuisine_diversity_score*0.20) DESC
         ) AS city_rank_today
     FROM combined
 )

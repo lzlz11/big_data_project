@@ -9,7 +9,7 @@ import requests
 import json
 import os
 from datetime import datetime, timezone
-from ingestion.date_utils import get_target_date, target_datetime_iso
+from ingestion.date_utils import get_target_dates, target_datetime_iso
 
 # Cities configuration
 CITIES = {
@@ -141,18 +141,30 @@ def save_raw(city_key: str, data: dict, date_str: str):
 
 def run_ingestion(**kwargs):
     """Main ingestion function called by Airflow."""
-    date_str = get_target_date(kwargs)
+    target_dates = get_target_dates(kwargs)
     results = []
 
-    for city_key, city_info in CITIES.items():
-        try:
-            print(f"[Weather] Fetching data for {city_info['name']}...")
-            data = fetch_weather(city_key, city_info, date_str)
-            filepath = save_raw(city_key, data, date_str)
-            results.append({"city": city_key, "status": "success", "file": filepath})
-        except Exception as e:
-            print(f"[Weather] ERROR for {city_key}: {e}")
-            results.append({"city": city_key, "status": "error", "error": str(e)})
+    for date_str in target_dates:
+        print(f"[Weather] Processing target date: {date_str}")
+        for city_key, city_info in CITIES.items():
+            try:
+                print(f"[Weather] Fetching data for {city_info['name']} on {date_str}...")
+                data = fetch_weather(city_key, city_info, date_str)
+                filepath = save_raw(city_key, data, date_str)
+                results.append({
+                    "date": date_str,
+                    "city": city_key,
+                    "status": "success",
+                    "file": filepath,
+                })
+            except Exception as e:
+                print(f"[Weather] ERROR for {city_key} on {date_str}: {e}")
+                results.append({
+                    "date": date_str,
+                    "city": city_key,
+                    "status": "error",
+                    "error": str(e),
+                })
 
     print(f"[Weather] Ingestion complete: {results}")
     return results

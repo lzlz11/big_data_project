@@ -1,0 +1,2027 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-06T15:07:59Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 25475389,
+      "lat": 51.5265807,
+      "lon": -0.1292505,
+      "tags": {
+        "amenity": "cafe",
+        "fixme": "not on FHRS",
+        "name": "Woburn Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 25497832,
+      "lat": 51.5247641,
+      "lon": -0.1161125,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "250",
+        "amenity": "cafe",
+        "name": "Cafe Angel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 26845558,
+      "lat": 51.5110542,
+      "lon": -0.1325596,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "taiwanese",
+        "name": "Old Tree Daiwan Bee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 60660465,
+      "lat": 51.5229924,
+      "lon": -0.1257455,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "amenity": "fast_food",
+        "brand": "Farmer J",
+        "brand:wikidata": "Q118611346",
+        "check_date": "2026-02-28",
+        "check_date:diet:vegetarian": "2026-02-28",
+        "cuisine": "regional",
+        "diet:vegetarian": "yes",
+        "name": "Farmer J",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 96008565,
+      "lat": 51.5340961,
+      "lon": -0.0560633,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "23-27",
+        "addr:postcode": "E2 9DR",
+        "addr:street": "Wadeson Street",
+        "amenity": "restaurant",
+        "fhrs:id": "83786",
+        "name": "Bistrotheque",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 96229448,
+      "lat": 51.517788,
+      "lon": -0.0656989,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "133",
+        "addr:postcode": "E1 1DT",
+        "addr:street": "Whitechapel Road",
+        "amenity": "restaurant",
+        "fhrs:id": "1627201",
+        "name": "Mithai Ghar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 108035514,
+      "lat": 51.47539,
+      "lon": -0.1312087,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "339-343",
+        "addr:postcode": "SW8 2JH",
+        "addr:street": "Wandsworth Road",
+        "air_conditioning": "yes",
+        "alt_name": "Atoca",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "check_date": "2024-05-12",
+        "contact:website": "https://www.atoca-lambeth.co.uk/",
+        "cuisine": "portuguese",
+        "diet:vegetarian": "yes",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "484663",
+        "fhrs:inspectiondate": "2011-09-29",
+        "fhrs:rating": "4",
+        "name": "A toca",
+        "note": "FHRS thinks name=Atoca here",
+        "outdoor_seating": "no",
+        "payment:american_express": "yes",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "reservation": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 130210673,
+      "lat": 51.5046688,
+      "lon": -0.1696555,
+      "tags": {
+        "amenity": "cafe",
+        "bar": "yes",
+        "check_date": "2026-03-04",
+        "drive_through": "no",
+        "highchair": "yes",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "The Serpentine Lido Cafe",
+        "outdoor_seating": "pedestrian_zone",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "smoking": "outside",
+        "source": "survey",
+        "takeaway": "yes",
+        "website": "https://www.royalparks.org.uk/parks/hyde-park/food-and-drink/lido-bar-and-cafe",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 132957893,
+      "lat": 51.4651993,
+      "lon": -0.1291139,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "3",
+        "addr:postcode": "SW4 7SH",
+        "addr:street": "Bedford Road",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "482987",
+        "fhrs:inspectiondate": "2012-01-23",
+        "fhrs:rating": "4",
+        "name": "Alba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 132978018,
+      "lat": 51.4629835,
+      "lon": -0.1239279,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "118",
+        "addr:postcode": "SW4 7SE",
+        "addr:street": "Ferndale Road",
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "dontimport:fhrs:addrline1": "118 Ferndale Road",
+        "dontimport:fhrs:addrline2": "London",
+        "dontimport:fhrs:businesstype": "Pub/bar/nightclub",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "484095",
+        "fhrs:inspectiondate": "2011-10-28",
+        "fhrs:rating": "1",
+        "name": "Ferndales",
+        "opening_hours": "We-Su 18:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 140681851,
+      "lat": 51.4989916,
+      "lon": -0.1354995,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "16-18",
+        "addr:postcode": "SW1H 0AD",
+        "addr:street": "Palmer Street",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "428179",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Fr 06:00-19:00; Sa 09:00-17:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 140697749,
+      "lat": 51.4982302,
+      "lon": -0.1352163,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "26",
+        "addr:postcode": "SW1H 0AD",
+        "addr:street": "Palmer Street",
+        "amenity": "fast_food",
+        "brand": "Greggs",
+        "brand:wikidata": "Q3403981",
+        "brand:wikipedia": "en:Greggs",
+        "contact:website": "https://www.greggs.co.uk/shop-finder?shop-code=0919",
+        "cuisine": "sandwich;bakery",
+        "fhrs:confidence_management": "5",
+        "fhrs:hygiene": "5",
+        "fhrs:id": "414485",
+        "fhrs:local_authority_id": "01888/0026/0/001",
+        "fhrs:rating": "5",
+        "fhrs:structural": "5",
+        "name": "Greggs",
+        "source:addr": "FSA Food Hygiene Ratings Database",
+        "source:postcode": "FSA Food Hygiene Ratings Database",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 169355678,
+      "lat": 51.4992102,
+      "lon": -0.1378188,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "75-76",
+        "addr:postcode": "SW1E 6PD",
+        "addr:street": "Buckingham Gate",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "fhrs:id": "412670",
+        "name": "Bon Gusto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 169368767,
+      "lat": 51.4986304,
+      "lon": -0.1372558,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "45",
+        "addr:postcode": "SW1E 6BS",
+        "addr:street": "Buckingham Gate",
+        "alt_name": "Zander Bar",
+        "amenity": "restaurant",
+        "email": "westminster.reservations@bankrestaurants.com",
+        "name": "Bank Restaurant & Bar",
+        "phone": "+44 20 7630 6644",
+        "website": "https://www.individualrestaurants.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 169436940,
+      "lat": 51.4987752,
+      "lon": -0.1412257,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "19-21",
+        "addr:postcode": "SW1E 5HS",
+        "addr:street": "Palace Street",
+        "amenity": "cafe",
+        "fhrs:confidence_management": "5",
+        "fhrs:hygiene": "5",
+        "fhrs:id": "413465",
+        "fhrs:local_authority_id": "01205/0019/0/004",
+        "fhrs:rating": "5",
+        "fhrs:structural": "5",
+        "name": "Buckingham Coffee Lounge",
+        "source:addr": "FSA Food Hygiene Ratings Database",
+        "source:postcode": "FSA Food Hygiene Ratings Database"
+      }
+    },
+    {
+      "type": "node",
+      "id": 180403503,
+      "lat": 51.5186204,
+      "lon": -0.1214512,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "20",
+        "addr:postcode": "WC1A 2QD",
+        "addr:street": "Sicilian Avenue",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "email": "sa@spaghettihouse.co.uk",
+        "fhrs:id": "423742",
+        "name": "Spaghetti House",
+        "phone": "+44 20 7405 5215",
+        "website": "https://www.spaghettihouse.co.uk/location/holborn/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 244056695,
+      "lat": 51.5246924,
+      "lon": -0.0752813,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "25",
+        "addr:postcode": "E2 7HR",
+        "addr:street": "Old Nichol Street",
+        "amenity": "cafe",
+        "name": "Beans & Beyond"
+      }
+    },
+    {
+      "type": "node",
+      "id": 247957988,
+      "lat": 51.5055602,
+      "lon": -0.1176655,
+      "tags": {
+        "addr:city": "London",
+        "addr:postcode": "SE1 8XX",
+        "addr:street": "Festival Terrace",
+        "amenity": "restaurant",
+        "brand:wikidata": "Q19875012",
+        "check_date": "2024-07-16",
+        "check_date:opening_hours": "2024-07-16",
+        "contact:phone": "+44 20 7620 1328",
+        "cuisine": "brazilian",
+        "fhrs:id": "483372",
+        "indoor_seating": "yes",
+        "name": "Las Iguanas",
+        "opening_hours": "Mo-Th 11:00-22:30; Fr-Sa 11:00-23:00; Su 11:00-22:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.iguanas.co.uk/restaurants/london-royal-festival-hall/",
+        "wheelchair": "limited",
+        "wheelchair:description": "Entrance is unavailable"
+      }
+    },
+    {
+      "type": "node",
+      "id": 248443149,
+      "lat": 51.5366022,
+      "lon": -0.0789765,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "8-10",
+        "addr:postcode": "N1 5QJ",
+        "addr:street": "Orsman Road",
+        "amenity": "restaurant",
+        "check_date": "2025-06-19",
+        "fhrs:id": "469906",
+        "name": "Waterhouse",
+        "source": "local knowledge",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 248933563,
+      "lat": 51.4631647,
+      "lon": -0.1407101,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "32",
+        "addr:postcode": "SW4 0JE",
+        "addr:street": "The Pavement",
+        "amenity": "restaurant",
+        "check_date": "2024-08-02",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "484590",
+        "fhrs:inspectiondate": "2013-02-14",
+        "fhrs:rating": "4",
+        "indoor_seating": "yes",
+        "name": "No. 32 The Old Town",
+        "opening_hours": "09:00 - 23:00",
+        "outdoor_seating": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers"
+      }
+    },
+    {
+      "type": "node",
+      "id": 249314702,
+      "lat": 51.5042616,
+      "lon": -0.0612495,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Turks Head Cafe",
+        "addr:housenumber": "1",
+        "addr:postcode": "E1W 2PA",
+        "addr:street": "Green Bank",
+        "alt_name": "Bistro Bardot",
+        "amenity": "cafe",
+        "contact:instagram": "https://www.instagram.com/theturksheadwapping/",
+        "cuisine": "international",
+        "email": "info@bistrobardot.co.uk",
+        "fhrs:id": "79346",
+        "name": "Turk's Head Cafe",
+        "opening_hours": "Mo 16:00-22:00; Tu-Fr 18:00-23:00; Sa 09:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+44 20 7709 0779",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "website": "https://www.bistrobardot.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 256497884,
+      "lat": 51.5134807,
+      "lon": -0.1165232,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Columbia House",
+        "addr:housenumber": "69",
+        "addr:postcode": "WC2B 4RR",
+        "addr:street": "Aldwych",
+        "alt_name": "LSE Garrick",
+        "amenity": "cafe",
+        "fhrs:id": "412911",
+        "fhrs:local_authority_id": "00974/4000/0/001",
+        "level": "0;-1",
+        "name": "The Garrick",
+        "opening_hours": "Mo-Fr 08:00-19:00",
+        "operator": "London School of Economics and Political Science (LSE)",
+        "smoking": "no",
+        "source": "http://www.lse.ac.uk/intranet/LSEServices/cateringServices/restaurantsAndCafes/garrick.aspx",
+        "website": "http://www.lse.ac.uk/intranet/LSEServices/cateringServices/restaurantsAndCafes/garrick.aspx",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 257464737,
+      "lat": 51.4936329,
+      "lon": -0.2403793,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "284",
+        "addr:postcode": "W6 0SP",
+        "addr:street": "King Street",
+        "amenity": "fast_food",
+        "brand": "Pizza Hut Delivery",
+        "brand:wikidata": "Q107293079",
+        "brand:wikipedia": "en:Pizza Hut",
+        "check_date": "2024-09-19",
+        "check_date:opening_hours": "2024-09-19",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "fhrs:id": "345203",
+        "name": "Pizza Hut Delivery",
+        "note": "restaurant with takeaway & delivery",
+        "opening_hours": "Mo-Th 11:30-23:00; Fr-Sa 11:00-24:00; Su 11:30-23:00",
+        "phone": "+44 20 8741 9966",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "only",
+        "website": "https://www.pizzahut.co.uk/huts/uk-1/7587-west-hammersmith/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 259086194,
+      "lat": 51.510079,
+      "lon": -0.0394268,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Ionian Building",
+        "addr:housenumber": "45",
+        "addr:postcode": "E14 8DX",
+        "addr:street": "Narrow Street",
+        "addr:unit": "Unit 1",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "fhrs:id": "81132",
+        "name": "La Figa",
+        "not:addr:postcode": "E14 8DW",
+        "opening_hours": "Mo-Sa 12:00-23:00, Sa 13:00-23:00, Su 13:00-22:30",
+        "opening_hours:url": "http://www.lafigarestaurant.co.uk/contact",
+        "phone": "+44 20 7790 0077",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "website": "https://www.lafigarestaurant.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 259086195,
+      "lat": 51.5100406,
+      "lon": -0.0387991,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Adriatic Building",
+        "addr:housenumber": "51",
+        "addr:postcode": "E14 8DN",
+        "addr:street": "Narrow Street",
+        "addr:unit": "Unit 2",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "email": "canarywharf@holycowonline.com",
+        "fhrs:id": "1588161",
+        "name": "Holy Cow",
+        "opening_hours": "Mo-Su 14:00-23:00",
+        "phone": "+44 20 7790 7688",
+        "website": "https://www.holycowonline.com/locations/limehouse-canary-wharf-indian-restaurant/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 259569252,
+      "lat": 51.4884009,
+      "lon": -0.1374885,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "34",
+        "addr:postcode": "SW1V 3EB",
+        "addr:street": "Lupus Street",
+        "amenity": "restaurant",
+        "check_date": "2024-04-04",
+        "cuisine": "tapas",
+        "fhrs:confidence_management": "10",
+        "fhrs:hygiene": "15",
+        "fhrs:id": "413404",
+        "fhrs:local_authority_id": "01180/0034/0/000",
+        "fhrs:rating": "2",
+        "fhrs:structural": "10",
+        "indoor_seating": "yes",
+        "name": "Goya",
+        "outdoor_seating": "yes",
+        "source:addr": "FSA Food Hygiene Ratings Database",
+        "source:postcode": "FSA Food Hygiene Ratings Database"
+      }
+    },
+    {
+      "type": "node",
+      "id": 259774384,
+      "lat": 51.5127342,
+      "lon": -0.1414857,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "9",
+        "addr:postcode": "W1S 2XD",
+        "addr:street": "Conduit Street",
+        "amenity": "restaurant",
+        "fhrs:confidence_management": "0",
+        "fhrs:hygiene": "0",
+        "fhrs:id": "413604",
+        "fhrs:local_authority_id": "01288/0009/0/000",
+        "fhrs:rating": "5",
+        "fhrs:structural": "5",
+        "name": "Sketch",
+        "phone": "+44 20 7659 4500",
+        "source": "freind's local knowledge",
+        "source:addr": "FSA Food Hygiene Ratings Database",
+        "source:postcode": "FSA Food Hygiene Ratings Database",
+        "website": "https://sketch.london/",
+        "wheelchair": "no",
+        "wikidata": "Q14955160"
+      }
+    },
+    {
+      "type": "node",
+      "id": 260124921,
+      "lat": 51.5148992,
+      "lon": -0.0596548,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "201-217",
+        "addr:postcode": "E1 2BT",
+        "addr:street": "Commercial Road",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "check_date": "2024-08-31",
+        "contact:website": "https://www.mcdonalds.com/gb/en-gb/location/tower-hamlets/commercial-road/201217-commercial-road/8261127.html",
+        "cuisine": "burger",
+        "drive_through": "yes",
+        "fhrs:id": "73600",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "McDonald's",
+        "opening_hours": "24/7",
+        "phone": "+44 20 7790 8238",
+        "self_service": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 260283878,
+      "lat": 51.540145,
+      "lon": -0.1439007,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "239",
+        "addr:postcode": "NW1 7BU",
+        "addr:street": "Camden High Street",
+        "alt_name": "Kentucky Fried Chicken",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "contact:website": "https://www.kfc.co.uk/kfc-near-me/camden-high-street",
+        "cuisine": "chicken",
+        "drive_through": "no",
+        "fhrs:id": "424093",
+        "name": "KFC",
+        "source:addr": "FSA Food Hygiene Rating Scheme open data",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 261269878,
+      "lat": 51.52821,
+      "lon": -0.0509194,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "254",
+        "addr:postcode": "E2 0JD",
+        "addr:street": "Globe Road",
+        "amenity": "restaurant",
+        "fhrs:id": "89940",
+        "indoor_seating": "yes",
+        "name": "The Full Monty",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 261269898,
+      "lat": 51.5281476,
+      "lon": -0.050883,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "252",
+        "addr:postcode": "E2 0JD",
+        "addr:street": "Globe Road",
+        "amenity": "fast_food",
+        "cuisine": "chinese",
+        "fhrs:id": "150198",
+        "name": "Suey Hong"
+      }
+    },
+    {
+      "type": "node",
+      "id": 261287273,
+      "lat": 51.4726798,
+      "lon": -0.1225008,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Pret A Manger",
+        "brand:wikidata": "Q2109109",
+        "check_date": "2025-08-02",
+        "cuisine": "sandwich",
+        "name": "Pret A Manger",
+        "short_name": "Pret",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 261325961,
+      "lat": 51.4808939,
+      "lon": -0.12483,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "126",
+        "addr:postcode": "SW8 1RB",
+        "addr:street": "South Lambeth Road",
+        "amenity": "restaurant",
+        "check_date": "2025-08-16",
+        "cuisine": "brazilian",
+        "fhrs:id": "483626",
+        "name": "Tia Maria Bar & Kitchen",
+        "opening_hours": "Mo-Th, Su 12:00-00:00; Fr, Sa 12:00-01:00",
+        "phone": "+44 20 7622 3602",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 262562858,
+      "lat": 51.5032228,
+      "lon": -0.0596251,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "81",
+        "addr:postcode": "E1W 2YN",
+        "addr:street": "Wapping High Street",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "fhrs:id": "1152077",
+        "name": "Il Pirata London",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 262565580,
+      "lat": 51.5063119,
+      "lon": -0.1171395,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Royal Festival Hall",
+        "addr:postcode": "SE1 8XX",
+        "addr:street": "Riverside Level 1",
+        "addr:unit": "Riverside Level Units1 & 2",
+        "amenity": "restaurant",
+        "brand": "Giraffe",
+        "brand:wikidata": "Q5564102",
+        "cuisine": "international;burger",
+        "fhrs:id": "483198",
+        "fixme:addr:1": "South Bank",
+        "name": "Giraffe",
+        "opening_hours": "Mo-Th 08:00-23:00;Fr 08:00-23:30;Sa 09:00-23:30;Su 09:00-22:30",
+        "phone": "+44 20 7042 6900",
+        "source:addr": "FHRS Open Data",
+        "website": "https://www.giraffe.net/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 262565828,
+      "lat": 51.4888419,
+      "lon": -0.137108,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "46",
+        "addr:postcode": "SW1V 2PB",
+        "addr:street": "Moreton Street",
+        "amenity": "restaurant",
+        "brand": "PizzaExpress",
+        "brand:wikidata": "Q662845",
+        "brand:wikipedia": "en:PizzaExpress",
+        "check_date": "2024-04-04",
+        "cuisine": "pizza",
+        "fhrs:confidence_management": "5",
+        "fhrs:hygiene": "5",
+        "fhrs:id": "428103",
+        "fhrs:local_authority_id": "01444/0046/0/000",
+        "fhrs:rating": "4",
+        "fhrs:structural": "10",
+        "name": "PizzaExpress",
+        "payment:american_express": "yes",
+        "source:addr": "FSA Food Hygiene Ratings Database",
+        "source:postcode": "FSA Food Hygiene Ratings Database",
+        "website": "https://www.pizzaexpress.com/london-pimlico"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264137221,
+      "lat": 51.505619,
+      "lon": -0.054029,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "16",
+        "addr:postcode": "E1W 3TU",
+        "addr:street": "New Crane Place",
+        "amenity": "restaurant",
+        "fhrs:id": "43816",
+        "name": "River View Restaurant",
+        "website": "http://www.riverview-restaurant.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264515393,
+      "lat": 51.517658,
+      "lon": -0.1210393,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "124",
+        "addr:postcode": "WC1V 6AN",
+        "addr:street": "High Holborn",
+        "amenity": "fast_food",
+        "brand": "Coco di Mama",
+        "brand:wikidata": "Q118146052",
+        "cuisine": "italian",
+        "name": "Coco di Mama",
+        "takeaway": "yes",
+        "website": "https://www.cocodimama.co.uk/locations/london-holborn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264515707,
+      "lat": 51.5177884,
+      "lon": -0.119722,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "112",
+        "addr:postcode": "WC1V 6JS",
+        "addr:street": "High Holborn",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "changing_table": "no",
+        "check_date": "2026-05-30",
+        "check_date:opening_hours": "2024-08-31",
+        "contact:website": "https://www.mcdonalds.com/gb/en-gb/location/holborn/holborn/112-high-holborn/8260228.html",
+        "cuisine": "burger",
+        "drive_through": "no",
+        "fhrs:id": "423781",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "McDonald's",
+        "opening_hours": "24/7",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "phone": "+44 20 7404 0162",
+        "self_service": "yes",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264515720,
+      "lat": 51.5178558,
+      "lon": -0.1187798,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "99",
+        "addr:postcode": "WC1V 6LF",
+        "addr:street": "High Holborn",
+        "amenity": "restaurant",
+        "brand": "PizzaExpress",
+        "brand:wikidata": "Q662845",
+        "brand:wikipedia": "en:PizzaExpress",
+        "check_date": "2026-03-05",
+        "cuisine": "pizza",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "fhrs:id": "424641",
+        "fhrs:local_authority_id": "29424",
+        "name": "PizzaExpress",
+        "payment:american_express": "yes",
+        "website": "https://www.pizzaexpress.com/london-high-holborn"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264524115,
+      "lat": 51.5044528,
+      "lon": -0.0784709,
+      "tags": {
+        "addr:city": "London",
+        "addr:postcode": "SE1 2RL",
+        "amenity": "cafe",
+        "name": "Caffe Nomma Italian",
+        "old_name": "Cafe Fratelli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264587384,
+      "lat": 51.5222849,
+      "lon": -0.0446563,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "237",
+        "addr:postcode": "E1 4AA",
+        "addr:street": "Mile End Road",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Mr. Wong's Wok & Box",
+        "old_name": "R Bar",
+        "source:addr:postcode": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264625036,
+      "lat": 51.5271512,
+      "lon": -0.0828862,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "5",
+        "addr:postcode": "N1 6HG",
+        "addr:street": "Hoxton Market",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "fhrs:id": "1214920",
+        "name": "Jabinjia Hotpot"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264625038,
+      "lat": 51.5270245,
+      "lon": -0.0837537,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "21",
+        "addr:postcode": "N1 6HB",
+        "addr:street": "Pitfield Street",
+        "amenity": "cafe",
+        "fhrs:id": "470675",
+        "name": "Neds Noodle Bar",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264803330,
+      "lat": 51.4872825,
+      "lon": -0.1115445,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "316",
+        "addr:postcode": "SE11 4LD",
+        "addr:street": "Kennington Road",
+        "amenity": "restaurant",
+        "brand": "PizzaExpress",
+        "brand:wikidata": "Q662845",
+        "brand:wikipedia": "en:PizzaExpress",
+        "check_date": "2026-01-07",
+        "cuisine": "pizza",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "484200",
+        "fhrs:inspectiondate": "2014-04-03",
+        "fhrs:rating": "5",
+        "name": "PizzaExpress",
+        "opening_hours": "Mo-We 11:30-22:00; Th-Sa 11:30-23:00; Su 11:30-22:00",
+        "outdoor_seating": "no",
+        "phone": "+44 20 7820 3877",
+        "website": "https://www.pizzaexpress.com/london-kennington-road",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 264803332,
+      "lat": 51.4873118,
+      "lon": -0.1111439,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "343",
+        "addr:postcode": "SE11 4QE",
+        "addr:street": "Kennington Road",
+        "amenity": "fast_food",
+        "brand": "Pizza Hut Delivery",
+        "brand:wikidata": "Q107293079",
+        "brand:wikipedia": "en:Pizza Hut",
+        "check_date": "2024-09-19",
+        "check_date:opening_hours": "2024-09-19",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "484205",
+        "fhrs:inspectiondate": "2013-02-14",
+        "fhrs:rating": "5",
+        "name": "Pizza Hut Delivery",
+        "opening_hours": "Mo-Th 11:00-02:00; Fr-Sa 11:00-03:00; Su 11:00-02:00",
+        "phone": "+44 20 7793 8866",
+        "takeaway": "only",
+        "website": "https://www.pizzahut.co.uk/huts/uk-1/7695-kennington-road/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 265649514,
+      "lat": 51.5416421,
+      "lon": -0.1570131,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "greek",
+        "name": "Lemonia",
+        "phone": "+44 20 7586 7454",
+        "website": "https://www.lemonia.co.uk/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 265662788,
+      "lat": 51.4957287,
+      "lon": -0.1419336,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "314-316",
+        "addr:postcode": "SW1V 1AA",
+        "addr:street": "Vauxhall Bridge Road",
+        "amenity": "restaurant",
+        "check_date": "2026-02-18",
+        "cuisine": "italian",
+        "fhrs:id": "413527",
+        "name": "Il Posto",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 265662939,
+      "lat": 51.4957754,
+      "lon": -0.1419631,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "318",
+        "addr:postcode": "SW1V 1AA",
+        "addr:street": "Vauxhall Bridge Road",
+        "amenity": "fast_food",
+        "check_date": "2026-02-18",
+        "cuisine": "kebab;burger",
+        "fhrs:id": "413528",
+        "name": "Wrap City Kebab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 266416976,
+      "lat": 51.4955582,
+      "lon": -0.0068108,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "65-67",
+        "addr:postcode": "E14 3UU",
+        "addr:street": "Amsterdam Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "fhrs:id": "1283894",
+        "name": "Memsaheb",
+        "opening_hours": "Mo-Su 17:30-23:00",
+        "was:name": "Ananda;Memsaheb on Thames",
+        "website": "https://memsahebe14.uk/home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 266481949,
+      "lat": 51.5109108,
+      "lon": -0.1393146,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "4",
+        "addr:postcode": "W1B 4BS",
+        "addr:street": "Heddon Street",
+        "amenity": "restaurant",
+        "cuisine": "french",
+        "name": "Aubaine",
+        "website": "https://aubaine.co.uk/locations/heddon-street/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 267406074,
+      "lat": 51.5059312,
+      "lon": -0.1171709,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Royal Festival Hall",
+        "addr:postcode": "SE1 8XX",
+        "amenity": "cafe",
+        "check_date": "2023-12-17",
+        "contact:website": "https://www.southbankcentre.co.uk/visit/cafes-restaurants-bars/riverside-terrace-cafe",
+        "fhrs:id": "483405",
+        "name": "Riverside Terrace Cafe",
+        "opening_hours": "Mo-Tu 10:00-18:00; We-Su 10:00-20:30",
+        "source:addr": "FHRS Open Data",
+        "wheelchair": "yes",
+        "wheelchair:description": "Lift from ground floor, Low counter. Wide doors to outside seating. Accessible Toilets not checked. [6/2017 lift to Jubilee Bridge not working]"
+      }
+    },
+    {
+      "type": "node",
+      "id": 268430894,
+      "lat": 51.5071193,
+      "lon": -0.1077261,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "58-60",
+        "addr:postcode": "SE1 9LX",
+        "addr:street": "Stamford Street",
+        "amenity": "fast_food",
+        "brand": "Pret A Manger",
+        "brand:wikidata": "Q2109109",
+        "brand:wikipedia": "en:Pret a Manger",
+        "contact:website": "https://locations.pret.co.uk/london/58-60-stamford-street",
+        "cuisine": "sandwich",
+        "fhrs:id": "364729",
+        "name": "Pret A Manger",
+        "opening_hours": "Mo-Fr 07:30-17:00",
+        "payment:american_express": "yes",
+        "short_name": "Pret",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 271409937,
+      "lat": 51.4997405,
+      "lon": -0.026204,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "32",
+        "addr:postcode": "E14 8LW",
+        "addr:street": "Westferry Road",
+        "amenity": "restaurant",
+        "fhrs:id": "717138",
+        "name": "Clifton Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 271949508,
+      "lat": 51.5131214,
+      "lon": -0.1422056,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "26",
+        "addr:street": "Maddox Street",
+        "amenity": "restaurant",
+        "check_date": "2026-02-19",
+        "cuisine": "steak_house",
+        "name": "Goodman",
+        "phone": "+44 20 7499 3776",
+        "warning": "service charge included",
+        "website": "https://www.goodmanrestaurants.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 271949545,
+      "lat": 51.513393,
+      "lon": -0.1423314,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "8-10",
+        "addr:street": "Pollen Street",
+        "amenity": "restaurant",
+        "name": "Mary's",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:wheelchair": "no",
+        "website": "https://www.pollenstreetsocial.com/",
+        "wheelchair": "limited",
+        "wikidata": "Q13956892"
+      }
+    },
+    {
+      "type": "node",
+      "id": 272077156,
+      "lat": 51.4920195,
+      "lon": -0.140075,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "1",
+        "addr:postcode": "SW1V 2HF",
+        "addr:street": "Denbigh Street",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "fhrs:id": "411155",
+        "name": "Uno",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 272499359,
+      "lat": 51.4861623,
+      "lon": -0.0136551,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Lockes Wharf",
+        "addr:housenumber": "8-42",
+        "addr:postcode": "E14 3WA",
+        "addr:street": "St. Davids Square",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "cuisine": "thai",
+        "fhrs:id": "73341",
+        "name": "Kinkao Thai Restaurant",
+        "opening_hours": "Mo-Th 12:00-15:00,17:30-23:00, Fr 12:00-15:00,17:30-24:00, Sa 12:00-24:00, Su 12:00-22:00",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 273217489,
+      "lat": 51.496539,
+      "lon": -0.1354705,
+      "tags": {
+        "amenity": "cafe",
+        "name": "City Brunch",
+        "old_name": "XLNT",
+        "outdoor_seating": "yes",
+        "start_date": "2020-01",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 273217510,
+      "lat": 51.4964968,
+      "lon": -0.1357931,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "12",
+        "addr:postcode": "SW1P 1RZ",
+        "addr:street": "Artillery Row",
+        "amenity": "cafe",
+        "fhrs:id": "411329",
+        "name": "Cafe Nuvo",
+        "old_name": "Cafe Hamlet",
+        "opening_hours": "Mo-Fr 06:00-16:00; Sa 07:00-14:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 273535350,
+      "lat": 51.4994627,
+      "lon": -0.0528952,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "fish_and_chips",
+        "name": "Albion Fish Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 273542295,
+      "lat": 51.4614013,
+      "lon": -0.11448,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "447",
+        "addr:postcode": "SW9 8LP",
+        "addr:street": "Coldharbour Lane",
+        "amenity": "restaurant",
+        "check_date": "2024-06-25",
+        "contact:phone": "+44 20 7326 5001",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "483006",
+        "fhrs:inspectiondate": "2013-10-09",
+        "fhrs:rating": "5",
+        "name": "Satay Bar",
+        "opening_hours": "Mo-Th 12:00-23:00; Fr 12:00-24:00; Sa 00:00-01:00,13:00-24:00; Su 00:00-01:00,13:00-23:00",
+        "website": "https://www.sataybar.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 273933958,
+      "lat": 51.489,
+      "lon": -0.1920131,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "270-272",
+        "addr:postcode": "SW5 9HR",
+        "addr:street": "Old Brompton Road",
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "877752",
+        "fryup": "yes",
+        "name": "Costa",
+        "phone": "+44 1932 784949",
+        "takeaway": "yes",
+        "website": "https://www.costa.co.uk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 273933965,
+      "lat": 51.4899869,
+      "lon": -0.190421,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "229",
+        "addr:street": "Earl's Court Road",
+        "amenity": "cafe",
+        "name": "Caffè du Coin",
+        "phone": "+44 20 7373 1995"
+      }
+    },
+    {
+      "type": "node",
+      "id": 275405499,
+      "lat": 51.49107,
+      "lon": -0.135199,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "43",
+        "addr:postcode": "SW1V 2TA",
+        "addr:street": "Vauxhall Bridge Road",
+        "amenity": "restaurant",
+        "cuisine": "argentinian",
+        "fhrs:id": "413517",
+        "name": "Moo Cantina Pimlico",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 275726796,
+      "lat": 51.49249,
+      "lon": -0.137906,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Taro",
+        "brand:wikidata": "Q117422851",
+        "check_date": "2025-09-26",
+        "cuisine": "japanese",
+        "name": "Taro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 276076130,
+      "lat": 51.4924729,
+      "lon": -0.1399743,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "About Thyme"
+      }
+    },
+    {
+      "type": "node",
+      "id": 276676950,
+      "lat": 51.4889995,
+      "lon": -0.136883,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "38",
+        "addr:postcode": "SW1V 2PB",
+        "addr:street": "Moreton Street",
+        "amenity": "restaurant",
+        "check_date": "2024-04-04",
+        "cuisine": "indian",
+        "fhrs:id": "413889",
+        "name": "Pimlico Tandoori"
+      }
+    },
+    {
+      "type": "node",
+      "id": 276757485,
+      "lat": 51.4931224,
+      "lon": -0.1444353,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Treat's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 277337382,
+      "lat": 51.4983961,
+      "lon": -0.1664209,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "152",
+        "addr:street": "Brompton Road",
+        "amenity": "restaurant",
+        "brand": "Caffè Concerto",
+        "brand:wikidata": "Q28035391",
+        "brand:wikipedia": "en:Caffè Concerto",
+        "name": "Caffè Concerto",
+        "website": "https://www.caffeconcerto.co.uk/restaurant/knightsbridge.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 277910542,
+      "lat": 51.514916,
+      "lon": -0.0635587,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "111-113",
+        "addr:postcode": "E1 1RD",
+        "addr:street": "Commercial Road",
+        "amenity": "restaurant",
+        "fhrs:id": "1229613",
+        "name": "Dilpasand",
+        "old_name": "Mirch Masala"
+      }
+    },
+    {
+      "type": "node",
+      "id": 279249388,
+      "lat": 51.5154204,
+      "lon": -0.0603671,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "31",
+        "addr:postcode": "E1 2DL",
+        "addr:street": "Nelson Street",
+        "amenity": "cafe",
+        "fhrs:id": "1739205",
+        "name": "Cafe Donatella",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 280835741,
+      "lat": 51.4833465,
+      "lon": -0.1694677,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "50",
+        "addr:street": "Cheyne Walk",
+        "amenity": "restaurant",
+        "name": "No. Fifty Cheyne",
+        "phone": "+44 20 7376 8787",
+        "website": "https://fiftycheyne.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 281426069,
+      "lat": 51.511834,
+      "lon": -0.1876332,
+      "tags": {
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "55",
+        "addr:postcode": "W2 4QH",
+        "addr:street": "Queensway",
+        "amenity": "restaurant",
+        "brand": "Bella Italia",
+        "brand:wikidata": "Q4883362",
+        "brand:wikipedia": "en:Bella Italia",
+        "check_date": "2024-07-16",
+        "check_date:opening_hours": "2024-07-16",
+        "cuisine": "italian",
+        "fhrs:confidence_management": "5",
+        "fhrs:hygiene": "10",
+        "fhrs:id": "414045",
+        "fhrs:local_authority_id": "01512/0108/0/000",
+        "fhrs:rating": "4",
+        "fhrs:structural": "0",
+        "name": "Bella Italia",
+        "opening_hours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-22:00",
+        "phone": "+44 20 7792 2880",
+        "source:addr": "FSA Food Hygiene Ratings Database",
+        "source:postcode": "FSA Food Hygiene Ratings Database",
+        "website": "https://www.bellaitalia.co.uk/restaurants/london/queensway-55"
+      }
+    },
+    {
+      "type": "node",
+      "id": 281426392,
+      "lat": 51.5125046,
+      "lon": -0.1874213,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "68",
+        "addr:street": "Queensway",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "indoor_seating": "yes",
+        "name": "garum",
+        "old_name": "La Brasserie Italiano"
+      }
+    },
+    {
+      "type": "node",
+      "id": 281454982,
+      "lat": 51.5204472,
+      "lon": -0.116957,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "15",
+        "addr:postcode": "WC1X 8SL",
+        "addr:street": "Theobald's Road",
+        "amenity": "fast_food",
+        "brand": "Pret A Manger",
+        "brand:wikidata": "Q2109109",
+        "brand:wikipedia": "en:Pret a Manger",
+        "check_date": "2025-11-12",
+        "cuisine": "sandwich",
+        "fhrs:id": "423743",
+        "name": "Pret A Manger",
+        "outdoor_seating": "no",
+        "short_name": "Pret",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 281454984,
+      "lat": 51.52042,
+      "lon": -0.117026,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "website": "https://restaurants.subway.com/united-kingdom/en/london/17-theobalds-road",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 281851003,
+      "lat": 51.525503,
+      "lon": -0.1538118,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2024-06-14",
+        "name": "The Courts Café at The Regent's Park",
+        "payment:cash": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 282117011,
+      "lat": 51.4804805,
+      "lon": -0.1589365,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tea Terrace"
+      }
+    },
+    {
+      "type": "node",
+      "id": 282686484,
+      "lat": 51.5056639,
+      "lon": -0.1151021,
+      "tags": {
+        "addr:city": "London",
+        "addr:postcode": "SE1 8YP",
+        "amenity": "restaurant",
+        "brand": "PizzaExpress",
+        "brand:wikidata": "Q662845",
+        "brand:wikipedia": "en:PizzaExpress",
+        "check_date": "2026-01-27",
+        "cuisine": "pizza",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "PizzaExpress",
+        "outdoor_seating": "yes",
+        "website": "https://www.pizzaexpress.com/london-royal-festival-hall",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 282686485,
+      "lat": 51.5052621,
+      "lon": -0.1167109,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Royal Festival Hall",
+        "addr:housenumber": "9",
+        "addr:postcode": "SE1 8XX",
+        "addr:street": "Festival Terrace",
+        "addr:unit": "9",
+        "amenity": "restaurant",
+        "brand": "Honest Burgers",
+        "brand:wikidata": "Q110061173",
+        "check_date": "2025-12-06",
+        "cuisine": "burger",
+        "diet:gluten_free": "yes",
+        "diet:halal": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "fhrs:id": "1028874",
+        "fixme:addr:1": "South Bank",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Honest Burgers",
+        "opening_hours": "Mo-Sa 10:30-23:00; Su 10:30-22:30",
+        "outdoor_seating": "yes",
+        "phone": "+44 20 3146 6379",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "website": "https://www.honestburgers.co.uk/locations/south-bank/",
+        "wheelchair": "yes",
+        "wheelchair:description": "Need assistance to open the door to the toilet."
+      }
+    },
+    {
+      "type": "node",
+      "id": 282686486,
+      "lat": 51.5053303,
+      "lon": -0.1169288,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Festival Terrace",
+        "addr:postcode": "SE1 8XX",
+        "addr:street": "Belvedere Road",
+        "addr:unit": "10",
+        "amenity": "restaurant",
+        "brand": "Côte Brasserie",
+        "brand:wikidata": "Q48699908",
+        "brand:wikipedia": "en:Côte",
+        "cuisine": "french",
+        "diet:gluten_free": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "fhrs:id": "1028883",
+        "fixme:addr:1": "South Bank",
+        "indoor_seating": "yes",
+        "name": "Côte Brasserie",
+        "opening_hours": "Mo-Fr 09:00-24:00; Sa 10:00-24:00; Su 10:00-22:00",
+        "opening_hours:covid19": "closed",
+        "outdoor_seating": "yes",
+        "phone": "+44 20 3846 5606",
+        "source:addr": "FHRS Open Data",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.cote.co.uk/restaurant/royal-festival-hall",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 282686488,
+      "lat": 51.5058554,
+      "lon": -0.1176662,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Royal Festival Hall",
+        "addr:postcode": "SE1 8XX",
+        "addr:street": "Royal Festival Hall",
+        "addr:unit": "6",
+        "amenity": "restaurant",
+        "brand:wikidata": "Q7620883",
+        "cuisine": "italian",
+        "fhrs:id": "483199",
+        "fixme:addr:1": "South Bank",
+        "name": "Strada",
+        "opening_hours": "Mo-We 08:00-23:00; Th-Sa 08:00-24:00; Su 11:30-22:00",
+        "phone": "+44 20 7401 9126",
+        "source:addr": "FHRS Open Data",
+        "website": "https://www.strada.co.uk/italian-restaurant/royal-festival-hall",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 282686489,
+      "lat": 51.5060836,
+      "lon": -0.117399,
+      "tags": {
+        "addr:city": "London",
+        "addr:postcode": "SE1 8XX",
+        "amenity": "fast_food",
+        "brand": "Pret A Manger",
+        "brand:wikidata": "Q2109109",
+        "brand:wikipedia": "en:Pret a Manger",
+        "check_date": "2023-12-17",
+        "contact:website": "https://locations.pret.co.uk/london/unit-4-royal-festival-hall",
+        "cuisine": "sandwich",
+        "fhrs:id": "1502101",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Pret A Manger",
+        "opening_hours": "07:00-20:00",
+        "operator": "Pret A Manger (Europe) Ltd",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+44 20 7928 6895",
+        "short_name": "Pret",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 286493172,
+      "lat": 51.4991305,
+      "lon": -0.0736417,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Archway Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 286509356,
+      "lat": 51.49616,
+      "lon": -0.0824545,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2025-12-05",
+        "cuisine": "chinese",
+        "name": "Crystal China"
+      }
+    },
+    {
+      "type": "node",
+      "id": 286509357,
+      "lat": 51.4961089,
+      "lon": -0.0825286,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "74-76",
+        "addr:postcode": "SE1 4TP",
+        "addr:street": "Tower Bridge Road",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "fhrs:id": "364277",
+        "name": "Tower Tandoori",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 287453551,
+      "lat": 51.5006223,
+      "lon": -0.0914796,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "25",
+        "addr:postcode": "SE1 4LA",
+        "addr:street": "Tabard Street",
+        "amenity": "restaurant",
+        "fhrs:id": "364744",
+        "name": "Simply Indian",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 287453553,
+      "lat": 51.5005539,
+      "lon": -0.0914286,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Twists Sandwich Bar",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 287457769,
+      "lat": 51.4960552,
+      "lon": -0.0830153,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab;burger;wraps",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "Hassan Bros. Steak & Kebab House",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 287457771,
+      "lat": 51.4957073,
+      "lon": -0.083467,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "59",
+        "addr:postcode": "SE1 4TL",
+        "addr:street": "Tower Bridge Road",
+        "amenity": "fast_food",
+        "check_date": "2026-04-28",
+        "cuisine": "chinese",
+        "fhrs:id": "364540",
+        "name": "Hing Loong Noodle House",
+        "opening_hours": "Mo,We-Sa 16:30-23:00; Su 04:30-23:00",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 287457772,
+      "lat": 51.4956707,
+      "lon": -0.0835033,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "diet:vegetarian": "yes",
+        "drive_through": "no",
+        "indoor_seating": "yes",
+        "name": "Tower Mangal",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "outdoor_seating": "no",
+        "phone": "+44 20 7357 6853",
+        "self_service": "no",
+        "website": "https://towermangal.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 289425959,
+      "lat": 51.4913233,
+      "lon": -0.0902584,
+      "tags": {
+        "addr:street": "Rodney Road",
+        "amenity": "fast_food",
+        "cuisine": "kebab",
+        "name": "Village Kebab House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 290128614,
+      "lat": 51.5057566,
+      "lon": -0.1177658,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Royal Festival Hall",
+        "addr:housenumber": "Riverside Level",
+        "addr:postcode": "SE1 8XX",
+        "addr:street": "Royal Festival Hall",
+        "addr:unit": "7",
+        "amenity": "restaurant",
+        "brand": "Wagamama",
+        "brand:wikidata": "Q503715",
+        "brand:wikipedia": "en:Wagamama",
+        "capacity": "160",
+        "cuisine": "asian",
+        "fhrs:id": "483137",
+        "fixme:addr:1": "South Bank",
+        "name": "Wagamama",
+        "opening_hours": "Mo-Sa 11:00-23:00;Su 11:00-22:00",
+        "phone": "+44 20 7021 0877",
+        "source:addr": "FHRS Open Data",
+        "website": "https://www.wagamama.com/restaurants/london/royal-festival-hall-southbank",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 291671973,
+      "lat": 51.4505415,
+      "lon": -0.1474761,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "67-93",
+        "addr:postcode": "SW12 9DP",
+        "addr:street": "Balham Hill",
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "brand:wikidata": "Q177054",
+        "brand:wikipedia": "en:Burger King",
+        "contact:website": "https://locations.burgerking.co.uk/london/67/73-balham-hill",
+        "cuisine": "burger",
+        "fhrs:id": "297846",
+        "name": "Burger King",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 292011536,
+      "lat": 51.4548973,
+      "lon": -0.1193419,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "91",
+        "addr:postcode": "SW2 1AA",
+        "addr:street": "Brixton Hill",
+        "amenity": "cafe",
+        "check_date": "2025-07-17",
+        "cuisine": "coffee_shop",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "483223",
+        "fhrs:inspectiondate": "2014-02-07",
+        "fhrs:rating": "4",
+        "name": "Café on the Hill"
+      }
+    },
+    {
+      "type": "node",
+      "id": 292011853,
+      "lat": 51.4548993,
+      "lon": -0.1198368,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "88",
+        "addr:postcode": "SW2 1QN",
+        "addr:street": "Brixton Hill",
+        "amenity": "fast_food",
+        "check_date": "2026-04-17",
+        "cuisine": "pizza",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "483222",
+        "fhrs:inspectiondate": "2012-10-25",
+        "fhrs:rating": "4",
+        "name": "Mamma's Pizza",
+        "phone": "+44 20 8678 7878",
+        "website": "https://www.mammaspizzabrixton.co.uk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 292011982,
+      "lat": 51.4547019,
+      "lon": -0.1199703,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "96",
+        "addr:postcode": "SW2 1QN",
+        "addr:street": "Brixton Hill",
+        "amenity": "cafe",
+        "check_date": "2025-07-17",
+        "cuisine": "coffee_shop",
+        "fhrs:authority": "Lambeth",
+        "fhrs:id": "509160",
+        "fhrs:inspectiondate": "2013-02-14",
+        "fhrs:rating": "1",
+        "name": "Café Tana",
+        "wifi": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 292163599,
+      "lat": 51.520045,
+      "lon": -0.1018834,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "7",
+        "addr:postcode": "EC1M 4AA",
+        "addr:street": "St. John Street",
+        "amenity": "restaurant",
+        "name": "Vinoteca Farringdon",
+        "website": "https://www.vinoteca.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 292384037,
+      "lat": 51.4975224,
+      "lon": -0.129607,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "30",
+        "addr:postcode": "SW1P 3BU",
+        "addr:street": "Great Smith Street",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/Cinnamonclub",
+        "cuisine": "indian;curry",
+        "fhrs:id": "413742",
+        "fhrs:local_authority_id": "01378/0030/3/000",
+        "indoor_seating": "yes",
+        "name": "The Cinnamon Club",
+        "outdoor_seating": "no",
+        "phone": "+44 20 7222 2555",
+        "source:addr": "FSA Food Hygiene Ratings Database",
+        "source:postcode": "FSA Food Hygiene Ratings Database",
+        "website": "http://www.cinnamonclub.com/",
+        "wheelchair": "no"
+      }
+    }
+  ],
+  "_overpass_urls": [
+    "https://overpass-api.de/api/interpreter"
+  ],
+  "_sample": {
+    "strategy": "fixed_osm_node_id_panel",
+    "sample_file": "/opt/airflow/data/sample/restaurants/london.json",
+    "sample_limit": 100,
+    "requested_ids": 100,
+    "returned_elements": 100
+  },
+  "_metadata": {
+    "city_key": "london",
+    "city_name": "London",
+    "ingested_at": "2026-05-30T12:00:00+00:00",
+    "source": "Overpass API (OpenStreetMap)",
+    "overpass_urls": [
+      "https://overpass-api.de/api/interpreter"
+    ],
+    "target_date": "2026-05-30",
+    "sampled": true,
+    "sample_mode": "fixed",
+    "sample_limit": 100,
+    "total_elements": 100
+  }
+}

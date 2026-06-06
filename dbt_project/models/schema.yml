@@ -6,6 +6,7 @@ sources:
     tables:
       - name: weather_raw
       - name: restaurants_raw
+      - name: air_quality_raw
 
 models:
   - name: stg_weather
@@ -15,6 +16,10 @@ models:
   - name: stg_restaurants
     columns:
       - name: restaurant_id
+        tests: [not_null]
+  - name: stg_air_quality
+    columns:
+      - name: city_key
         tests: [not_null]
   - name: mart_city_dining_score
     columns:

@@ -11,7 +11,7 @@ import time
 import math
 import random
 from datetime import datetime, timezone
-from ingestion.date_utils import get_target_date, target_datetime_iso, target_overpass_datetime
+from ingestion.date_utils import get_target_dates, target_datetime_iso, target_overpass_datetime
 
 CITIES = {
     "paris":    {"name": "Paris",    "bbox": (48.815, 2.224, 48.902, 2.470)},
@@ -319,19 +319,32 @@ def save_raw(city_key, data, date_str):
 
 
 def run_ingestion(**kwargs):
-    date_str = get_target_date(kwargs)
+    target_dates = get_target_dates(kwargs)
     results = []
-    for city_key, city_info in CITIES.items():
-        try:
-            print(f"[Restaurants] Fetching {city_info['name']}...")
-            data = fetch_restaurants(city_key, city_info, date_str)
-            save_raw(city_key, data, date_str)
-            results.append({"city": city_key, "status": "success", "count": data["_metadata"]["total_elements"]})
-        except Exception as e:
-            print(f"[Restaurants] ERROR {city_key}: {e}")
-            results.append({"city": city_key, "status": "error", "error": str(e)})
 
-        time.sleep(CITY_WAIT_SECONDS)
+    for date_str in target_dates:
+        print(f"[Restaurants] Processing target date: {date_str}")
+        for city_key, city_info in CITIES.items():
+            try:
+                print(f"[Restaurants] Fetching {city_info['name']} on {date_str}...")
+                data = fetch_restaurants(city_key, city_info, date_str)
+                save_raw(city_key, data, date_str)
+                results.append({
+                    "date": date_str,
+                    "city": city_key,
+                    "status": "success",
+                    "count": data["_metadata"]["total_elements"],
+                })
+            except Exception as e:
+                print(f"[Restaurants] ERROR {city_key} on {date_str}: {e}")
+                results.append({
+                    "date": date_str,
+                    "city": city_key,
+                    "status": "error",
+                    "error": str(e),
+                })
+
+            time.sleep(CITY_WAIT_SECONDS)
 
     failed = [r for r in results if r["status"] != "success"]
     if failed:

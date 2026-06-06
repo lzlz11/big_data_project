@@ -17,6 +17,7 @@ sys.path.insert(0, '/opt/airflow')
 
 from ingestion.ingest_weather import run_ingestion as ingest_weather
 from ingestion.ingest_restaurants import run_ingestion as ingest_restaurants
+from ingestion.ingest_air_quality import run_ingestion as ingest_air_quality
 from ingestion.format_to_postgres import run_formatting
 from indexing.index_to_elasticsearch import run_indexing
 
@@ -36,7 +37,11 @@ with DAG(
     start_date=datetime(2024, 1, 1),
     schedule_interval="0 6 * * *",
     catchup=False,
-    params={"target_date": ""},
+    params={
+        "target_date": "",
+        "target_start_date": "",
+        "target_end_date": "",
+    },
     tags=["bigdata", "weather", "restaurant", "dbt", "elasticsearch"],
 ) as dag:
 
@@ -50,6 +55,11 @@ with DAG(
     task_ingest_restaurants = PythonOperator(
         task_id="ingest_restaurants",
         python_callable=ingest_restaurants,
+    )
+
+    task_ingest_air_quality = PythonOperator(
+        task_id="ingest_air_quality",
+        python_callable=ingest_air_quality,
     )
 
     task_format = PythonOperator(
@@ -85,7 +95,7 @@ with DAG(
     end = EmptyOperator(task_id="pipeline_end")
 
     # Pipeline:
-    # start → [ingest_weather, ingest_restaurants] → format → dbt_run → dbt_test → index → end
-    start >> [task_ingest_weather, task_ingest_restaurants]
-    [task_ingest_weather, task_ingest_restaurants] >> task_format
+    # start → [ingest_weather, ingest_restaurants, ingest_air_quality] → format → dbt_run → dbt_test → index → end
+    start >> [task_ingest_weather, task_ingest_restaurants, task_ingest_air_quality]
+    [task_ingest_weather, task_ingest_restaurants, task_ingest_air_quality] >> task_format
     task_format >> task_dbt_run >> task_dbt_test >> task_index >> end
