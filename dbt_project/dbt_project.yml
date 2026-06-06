@@ -1,0 +1,23 @@
+name: 'weather_restaurants'
+version: '1.0.0'
+config-version: 2
+
+profile: 'weather_restaurants'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  weather_restaurants:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

@@ -1,0 +1,87 @@
+{
+  "latitude": 48.86,
+  "longitude": 2.3599997,
+  "generationtime_ms": 0.2472400665283203,
+  "utc_offset_seconds": 7200,
+  "timezone": "Europe/Paris",
+  "timezone_abbreviation": "GMT+2",
+  "elevation": 36.0,
+  "current_units": {
+    "time": "iso8601",
+    "interval": "seconds",
+    "temperature_2m": "°C",
+    "relative_humidity_2m": "%",
+    "precipitation": "mm",
+    "weather_code": "wmo code",
+    "wind_speed_10m": "km/h"
+  },
+  "current": {
+    "time": "2026-05-10T01:45",
+    "interval": 900,
+    "temperature_2m": 16.7,
+    "relative_humidity_2m": 57,
+    "precipitation": 0.0,
+    "weather_code": 3,
+    "wind_speed_10m": 12.3
+  },
+  "daily_units": {
+    "time": "iso8601",
+    "temperature_2m_max": "°C",
+    "temperature_2m_min": "°C",
+    "precipitation_sum": "mm",
+    "weather_code": "wmo code"
+  },
+  "daily": {
+    "time": [
+      "2026-05-10",
+      "2026-05-11",
+      "2026-05-12",
+      "2026-05-13",
+      "2026-05-14",
+      "2026-05-15",
+      "2026-05-16"
+    ],
+    "temperature_2m_max": [
+      19.7,
+      15.9,
+      16.7,
+      18.5,
+      15.6,
+      15.9,
+      14.9
+    ],
+    "temperature_2m_min": [
+      13.3,
+      9.0,
+      6.6,
+      9.7,
+      8.7,
+      5.6,
+      8.1
+    ],
+    "precipitation_sum": [
+      3.7,
+      8.53,
+      0.0,
+      0.0,
+      1.35,
+      0.0,
+      9.6
+    ],
+    "weather_code": [
+      61,
+      61,
+      3,
+      3,
+      80,
+      3,
+      95
+    ]
+  },
+  "_metadata": {
+    "city_key": "paris",
+    "city_name": "Paris",
+    "ingested_at": "2026-05-09T23:46:09.177750+00:00",
+    "source": "open-meteo.com"
+  }
+}

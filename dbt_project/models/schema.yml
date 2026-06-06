@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: dbt_weather_restaurants
+    tables:
+      - name: weather_raw
+      - name: restaurants_raw
+
+models:
+  - name: stg_weather
+    columns:
+      - name: city_key
+        tests: [not_null]
+  - name: stg_restaurants
+    columns:
+      - name: restaurant_id
+        tests: [not_null, unique]
+  - name: mart_city_dining_score
+    columns:
+      - name: city_key
+        tests: [not_null]
+  - name: mart_weekly_trend
+  - name: mart_cuisine_analysis
