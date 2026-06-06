@@ -15,7 +15,6 @@
 
 WITH weather AS (
     SELECT * FROM "airflow"."dbt_weather_restaurants"."stg_weather"
-    WHERE ingestion_date = CURRENT_DATE
 ),
 
 restaurant_stats AS (
@@ -30,7 +29,6 @@ restaurant_stats AS (
         COUNT(DISTINCT cuisine)
             FILTER (WHERE cuisine != 'unknown')            AS cuisine_diversity
     FROM "airflow"."dbt_weather_restaurants"."stg_restaurants"
-    WHERE ingestion_date = CURRENT_DATE
     GROUP BY city_key, city_name, ingestion_date
 ),
 
@@ -55,7 +53,9 @@ combined AS (
         ROUND(LEAST(COALESCE(r.total_venues, 0)::numeric / 100.0, 1.0) * 10, 1) AS venue_density_score,
         ROUND(LEAST(COALESCE(r.cuisine_diversity, 0)::numeric / 20.0, 1.0) * 10, 1) AS cuisine_diversity_score
     FROM weather w
-    LEFT JOIN restaurant_stats r USING (city_key)
+    LEFT JOIN restaurant_stats r
+        ON w.city_key = r.city_key
+       AND w.ingestion_date = r.ingestion_date
 ),
 
 final AS (

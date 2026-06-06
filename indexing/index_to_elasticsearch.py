@@ -42,7 +42,7 @@ INDEXES = {
     },
     "city_cuisine_analysis": {
         "table": "mart_cuisine_analysis",
-        "id_fields": ["city_key", "cuisine", "ingestion_date"],
+        "id_fields": ["city_key", "cuisine", "place_type", "ingestion_date"],
         "mappings": {
             "city_key": {"type": "keyword"}, "city_name": {"type": "keyword"},
             "cuisine": {"type": "keyword"}, "place_type": {"type": "keyword"},

@@ -14,28 +14,26 @@
 
 WITH restaurants AS (
     SELECT * FROM "airflow"."dbt_weather_restaurants"."stg_restaurants"
-    WHERE ingestion_date = CURRENT_DATE
-      AND cuisine != 'unknown'
+    WHERE cuisine != 'unknown'
 ),
 
 counts AS (
     SELECT
-        city_key, city_name, cuisine, place_type,
-        COUNT(*) AS venue_count,
-        MAX(ingestion_date) AS ingestion_date
+        city_key, city_name, ingestion_date, cuisine, place_type,
+        COUNT(*) AS venue_count
     FROM restaurants
-    GROUP BY city_key, city_name, cuisine, place_type
+    GROUP BY city_key, city_name, ingestion_date, cuisine, place_type
 ),
 
 ranked AS (
     SELECT *,
-        RANK() OVER (PARTITION BY city_key ORDER BY venue_count DESC) AS cuisine_rank,
-        ROUND(venue_count::numeric / SUM(venue_count) OVER (PARTITION BY city_key) * 100, 1) AS share_pct
+        RANK() OVER (PARTITION BY city_key, ingestion_date ORDER BY venue_count DESC) AS cuisine_rank,
+        ROUND(venue_count::numeric / SUM(venue_count) OVER (PARTITION BY city_key, ingestion_date) * 100, 1) AS share_pct
     FROM counts
 )
 
 SELECT * FROM ranked
 WHERE cuisine_rank <= 15
-ORDER BY city_key, cuisine_rank
+ORDER BY ingestion_date DESC, city_key, cuisine_rank
   );
   

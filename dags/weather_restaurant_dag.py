@@ -36,6 +36,7 @@ with DAG(
     start_date=datetime(2024, 1, 1),
     schedule_interval="0 6 * * *",
     catchup=False,
+    params={"target_date": ""},
     tags=["bigdata", "weather", "restaurant", "dbt", "elasticsearch"],
 ) as dag:
 

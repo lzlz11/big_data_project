@@ -1,7 +1,7 @@
 {
   "latitude": 51.5,
   "longitude": -0.25,
-  "generationtime_ms": 0.4731416702270508,
+  "generationtime_ms": 1.2712478637695312,
   "utc_offset_seconds": 3600,
   "timezone": "Europe/London",
   "timezone_abbreviation": "GMT+1",
@@ -16,13 +16,13 @@
     "wind_speed_10m": "km/h"
   },
   "current": {
-    "time": "2026-06-06T12:00",
+    "time": "2026-06-06T13:15",
     "interval": 900,
-    "temperature_2m": 14.3,
-    "relative_humidity_2m": 88,
-    "precipitation": 0.1,
-    "weather_code": 51,
-    "wind_speed_10m": 12.6
+    "temperature_2m": 14.5,
+    "relative_humidity_2m": 78,
+    "precipitation": 0.2,
+    "weather_code": 53,
+    "wind_speed_10m": 17.6
   },
   "daily_units": {
     "time": "iso8601",
@@ -42,7 +42,7 @@
       "2026-06-12"
     ],
     "temperature_2m_max": [
-      14.7,
+      15.1,
       20.5,
       16.8,
       17.1,
@@ -51,7 +51,7 @@
       17.6
     ],
     "temperature_2m_min": [
-      12.8,
+      13.1,
       11.7,
       13.5,
       9.8,
@@ -60,7 +60,7 @@
       13.2
     ],
     "precipitation_sum": [
-      9.9,
+      7.4,
       0.0,
       3.25,
       2.5,
@@ -69,7 +69,7 @@
       1.6
     ],
     "weather_code": [
-      55,
+      61,
       3,
       53,
       53,
@@ -81,7 +81,7 @@
   "_metadata": {
     "city_key": "london",
     "city_name": "London",
-    "ingested_at": "2026-06-06T11:07:56.072898+00:00",
+    "ingested_at": "2026-06-06T12:26:54.437325+00:00",
     "source": "open-meteo.com"
   }
 }

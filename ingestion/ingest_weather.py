@@ -9,6 +9,7 @@ import requests
 import json
 import os
 from datetime import datetime, timezone
+from ingestion.date_utils import get_target_date, target_datetime_iso
 
 # Cities configuration
 CITIES = {
@@ -21,7 +22,7 @@ CITIES = {
 DATA_LAKE_BASE = "/opt/airflow/data"
 
 
-def fetch_weather(city_key: str, city_info: dict) -> dict:
+def fetch_current_weather(city_key: str, city_info: dict, target_date: str) -> dict:
     """Fetch current weather and forecast from Open-Meteo API."""
     url = "https://api.open-meteo.com/v1/forecast"
     params = {
@@ -54,9 +55,73 @@ def fetch_weather(city_key: str, city_info: dict) -> dict:
         "city_name": city_info["name"],
         "ingested_at": datetime.now(timezone.utc).isoformat(),
         "source": "open-meteo.com",
+        "target_date": target_date,
     }
 
     return data
+
+
+def fetch_historical_weather(city_key: str, city_info: dict, target_date: str) -> dict:
+    """Fetch historical weather and adapt the selected noon record to current-like fields."""
+    url = "https://archive-api.open-meteo.com/v1/archive"
+    params = {
+        "latitude": city_info["lat"],
+        "longitude": city_info["lon"],
+        "start_date": target_date,
+        "end_date": target_date,
+        "hourly": [
+            "temperature_2m",
+            "relative_humidity_2m",
+            "precipitation",
+            "weather_code",
+            "wind_speed_10m",
+        ],
+        "timezone": "UTC",
+    }
+
+    response = requests.get(url, params=params, timeout=60)
+    response.raise_for_status()
+    data = response.json()
+
+    hourly = data.get("hourly", {})
+    times = hourly.get("time", [])
+    if not times:
+        raise RuntimeError(f"No historical hourly weather returned for {city_info['name']} on {target_date}")
+
+    target_time = f"{target_date}T12:00"
+    idx = times.index(target_time) if target_time in times else min(len(times) - 1, 12)
+
+    def hourly_value(name):
+        values = hourly.get(name) or []
+        return values[idx] if idx < len(values) else None
+
+    data["current"] = {
+        "time": times[idx],
+        "temperature_2m": hourly_value("temperature_2m"),
+        "relative_humidity_2m": hourly_value("relative_humidity_2m"),
+        "precipitation": hourly_value("precipitation"),
+        "weather_code": hourly_value("weather_code"),
+        "wind_speed_10m": hourly_value("wind_speed_10m"),
+    }
+    data["_metadata"] = {
+        "city_key": city_key,
+        "city_name": city_info["name"],
+        "ingested_at": target_datetime_iso(target_date),
+        "source": "open-meteo.com historical archive",
+        "target_date": target_date,
+        "selected_hour_utc": data["current"]["time"],
+    }
+
+    return data
+
+
+def fetch_weather(city_key: str, city_info: dict, target_date: str) -> dict:
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    if target_date < today:
+        return fetch_historical_weather(city_key, city_info, target_date)
+    if target_date > today:
+        raise ValueError("target_date cannot be in the future for this pipeline")
+    return fetch_current_weather(city_key, city_info, target_date)
 
 
 def save_raw(city_key: str, data: dict, date_str: str):
@@ -76,13 +141,13 @@ def save_raw(city_key: str, data: dict, date_str: str):
 
 def run_ingestion(**kwargs):
     """Main ingestion function called by Airflow."""
-    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    date_str = get_target_date(kwargs)
     results = []
 
     for city_key, city_info in CITIES.items():
         try:
             print(f"[Weather] Fetching data for {city_info['name']}...")
-            data = fetch_weather(city_key, city_info)
+            data = fetch_weather(city_key, city_info, date_str)
             filepath = save_raw(city_key, data, date_str)
             results.append({"city": city_key, "status": "success", "file": filepath})
         except Exception as e:

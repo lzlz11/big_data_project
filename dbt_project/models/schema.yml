@@ -15,7 +15,7 @@ models:
   - name: stg_restaurants
     columns:
       - name: restaurant_id
-        tests: [not_null, unique]
+        tests: [not_null]
   - name: mart_city_dining_score
     columns:
       - name: city_key

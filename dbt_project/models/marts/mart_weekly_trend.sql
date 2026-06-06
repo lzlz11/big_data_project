@@ -4,7 +4,10 @@
 
 WITH daily AS (
     SELECT * FROM {{ ref('mart_city_dining_score') }}
-    WHERE ingestion_date >= CURRENT_DATE - INTERVAL '7 days'
+    WHERE ingestion_date >= (
+        SELECT MAX(ingestion_date) - INTERVAL '7 days'
+        FROM {{ ref('mart_city_dining_score') }}
+    )
 )
 
 SELECT *,

@@ -1,7 +1,7 @@
 {
   "latitude": 48.86,
   "longitude": 2.3599997,
-  "generationtime_ms": 0.2906322479248047,
+  "generationtime_ms": 0.3587007522583008,
   "utc_offset_seconds": 7200,
   "timezone": "Europe/Paris",
   "timezone_abbreviation": "GMT+2",
@@ -16,13 +16,13 @@
     "wind_speed_10m": "km/h"
   },
   "current": {
-    "time": "2026-06-06T13:00",
+    "time": "2026-06-06T14:15",
     "interval": 900,
-    "temperature_2m": 17.2,
-    "relative_humidity_2m": 64,
+    "temperature_2m": 18.0,
+    "relative_humidity_2m": 67,
     "precipitation": 0.0,
-    "weather_code": 61,
-    "wind_speed_10m": 13.0
+    "weather_code": 2,
+    "wind_speed_10m": 16.9
   },
   "daily_units": {
     "time": "iso8601",
@@ -81,7 +81,7 @@
   "_metadata": {
     "city_key": "paris",
     "city_name": "Paris",
-    "ingested_at": "2026-06-06T11:07:55.841636+00:00",
+    "ingested_at": "2026-06-06T12:26:54.146440+00:00",
     "source": "open-meteo.com"
   }
 }

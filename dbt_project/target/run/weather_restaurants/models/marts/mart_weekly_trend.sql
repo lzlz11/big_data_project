@@ -14,7 +14,10 @@
 
 WITH daily AS (
     SELECT * FROM "airflow"."dbt_weather_restaurants"."mart_city_dining_score"
-    WHERE ingestion_date >= CURRENT_DATE - INTERVAL '7 days'
+    WHERE ingestion_date >= (
+        SELECT MAX(ingestion_date) - INTERVAL '7 days'
+        FROM "airflow"."dbt_weather_restaurants"."mart_city_dining_score"
+    )
 )
 
 SELECT *,

@@ -7,6 +7,7 @@ import os
 import psycopg2
 import psycopg2.extras
 from datetime import datetime, timezone
+from ingestion.date_utils import get_target_date
 
 DATA_LAKE_BASE = "/opt/airflow/data"
 DB_CONFIG = {"host": "postgres", "port": 5432, "dbname": "airflow", "user": "airflow", "password": "airflow"}
@@ -39,6 +40,20 @@ def setup_schema(conn):
         """)
         conn.commit()
     print("[Format] Schema ready.")
+
+
+def clear_existing_for_date(conn, date_str):
+    with conn.cursor() as cur:
+        cur.execute(f"""
+            DELETE FROM {SCHEMA}.weather_raw
+            WHERE (ingested_at AT TIME ZONE 'UTC')::date = %s::date;
+        """, (date_str,))
+        cur.execute(f"""
+            DELETE FROM {SCHEMA}.restaurants_raw
+            WHERE (ingested_at AT TIME ZONE 'UTC')::date = %s::date;
+        """, (date_str,))
+    conn.commit()
+    print(f"[Format] Cleared existing raw records for {date_str}.")
 
 
 def load_weather(conn, date_str):
@@ -101,10 +116,11 @@ def load_restaurants(conn, date_str):
 
 
 def run_formatting(**kwargs):
-    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    date_str = get_target_date(kwargs)
     conn = get_connection()
     try:
         setup_schema(conn)
+        clear_existing_for_date(conn, date_str)
         load_weather(conn, date_str)
         load_restaurants(conn, date_str)
     finally:
