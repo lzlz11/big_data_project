@@ -74,6 +74,15 @@ def clear_existing_for_date(conn, date_str):
     print(f"[Format] Cleared existing raw records for {date_str}.")
 
 
+def save_formatted(source: str, date_str: str, filename: str, data: dict):
+    """Save normalized data to formatted layer of the Data Lake."""
+    fmt_path = os.path.join(DATA_LAKE_BASE, "formatted", source, date_str)
+    os.makedirs(fmt_path, exist_ok=True)
+    with open(os.path.join(fmt_path, filename), "w", encoding="utf-8") as fp:
+        json.dump(data, fp, ensure_ascii=False, indent=2)
+    print(f"[Format] Saved formatted: formatted/{source}/{date_str}/{filename}")
+
+
 def load_weather(conn, date_str):
     path = os.path.join(DATA_LAKE_BASE, "raw", "weather", date_str)
     if not os.path.exists(path):
@@ -86,6 +95,21 @@ def load_weather(conn, date_str):
                 data = json.load(fp)
             meta = data.get("_metadata", {})
             current = data.get("current", {})
+
+            # Save normalized record to formatted layer
+            formatted = {
+                "city_key": meta.get("city_key"),
+                "city_name": meta.get("city_name"),
+                "ingested_at_utc": meta.get("ingested_at"),
+                "ingestion_date": date_str,
+                "temperature_c": current.get("temperature_2m"),
+                "humidity_pct": current.get("relative_humidity_2m"),
+                "precipitation_mm": current.get("precipitation"),
+                "wind_speed_kmh": current.get("wind_speed_10m"),
+                "weather_code": current.get("weather_code"),
+            }
+            save_formatted("weather", date_str, f, formatted)
+
             cur.execute(f"""
                 INSERT INTO {SCHEMA}.weather_raw
                 (city_key, city_name, ingested_at, current_temperature,
@@ -114,12 +138,26 @@ def load_restaurants(conn, date_str):
                 data = json.load(fp)
             meta = data.get("_metadata", {})
             rows = []
+            formatted_elements = []
             for el in data.get("elements", []):
                 tags = el.get("tags", {})
                 rows.append((el.get("id"), meta.get("city_key"), meta.get("city_name"),
                               tags.get("name"), tags.get("amenity"), tags.get("cuisine"),
                               el.get("lat"), el.get("lon"), tags.get("opening_hours"),
                               meta.get("ingested_at")))
+                formatted_elements.append({
+                    "osm_id": el.get("id"),
+                    "city_key": meta.get("city_key"),
+                    "city_name": meta.get("city_name"),
+                    "name": tags.get("name"),
+                    "amenity": tags.get("amenity"),
+                    "cuisine": tags.get("cuisine"),
+                    "latitude": el.get("lat"),
+                    "longitude": el.get("lon"),
+                    "opening_hours": tags.get("opening_hours"),
+                    "ingested_at_utc": meta.get("ingested_at"),
+                    "ingestion_date": date_str,
+                })
             if rows:
                 psycopg2.extras.execute_values(cur, f"""
                     INSERT INTO {SCHEMA}.restaurants_raw
@@ -127,6 +165,14 @@ def load_restaurants(conn, date_str):
                      latitude, longitude, opening_hours, ingested_at)
                     VALUES %s ON CONFLICT DO NOTHING;
                 """, rows)
+            if formatted_elements:
+                save_formatted("restaurants", date_str, f, {
+                    "city_key": meta.get("city_key"),
+                    "city_name": meta.get("city_name"),
+                    "ingestion_date": date_str,
+                    "total_venues": len(formatted_elements),
+                    "elements": formatted_elements,
+                })
             total += len(rows)
     conn.commit()
     print(f"[Format] Loaded {total} restaurant records.")
@@ -145,6 +191,27 @@ def load_air_quality(conn, date_str):
                 data = json.load(fp)
             meta = data.get("_metadata", {})
             current = data.get("current_air_quality", {})
+
+            # Save normalized record to formatted layer
+            formatted = {
+                "city_key": meta.get("city_key"),
+                "city_name": meta.get("city_name"),
+                "ingested_at_utc": meta.get("ingested_at"),
+                "ingestion_date": date_str,
+                "selected_hour_utc": meta.get("selected_hour_utc"),
+                "pm10": current.get("pm10"),
+                "pm2_5": current.get("pm2_5"),
+                "carbon_monoxide": current.get("carbon_monoxide"),
+                "nitrogen_dioxide": current.get("nitrogen_dioxide"),
+                "sulphur_dioxide": current.get("sulphur_dioxide"),
+                "ozone": current.get("ozone"),
+                "dust": current.get("dust"),
+                "uv_index": current.get("uv_index"),
+                "us_aqi": current.get("us_aqi"),
+                "european_aqi": current.get("european_aqi"),
+            }
+            save_formatted("air_quality", date_str, f, formatted)
+
             cur.execute(f"""
                 INSERT INTO {SCHEMA}.air_quality_raw
                 (city_key, city_name, ingested_at, selected_hour_utc,

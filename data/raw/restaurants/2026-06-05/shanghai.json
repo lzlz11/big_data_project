@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-06-06T15:43:44Z",
+    "timestamp_osm_base": "2026-06-06T15:48:45Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1415,12 +1415,12 @@
   "_metadata": {
     "city_key": "shanghai",
     "city_name": "Shanghai",
-    "ingested_at": "2026-06-02T12:00:00+00:00",
+    "ingested_at": "2026-06-05T12:00:00+00:00",
     "source": "Overpass API (OpenStreetMap)",
     "overpass_urls": [
       "https://overpass-api.de/api/interpreter"
     ],
-    "target_date": "2026-06-02",
+    "target_date": "2026-06-05",
     "sampled": true,
     "sample_mode": "fixed",
     "sample_limit": 100,
