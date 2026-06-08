@@ -1,0 +1,17 @@
+{
+  "city_key": "paris",
+  "city_name": "Paris",
+  "ingested_at_utc": "2026-06-08T12:03:40.553368+00:00",
+  "ingestion_date": "2026-06-08",
+  "selected_hour_utc": "2026-06-08T12:00",
+  "pm10": 10.8,
+  "pm2_5": 5.9,
+  "carbon_monoxide": 160.0,
+  "nitrogen_dioxide": 7.3,
+  "sulphur_dioxide": 0.4,
+  "ozone": 74.0,
+  "dust": 1.0,
+  "uv_index": 5.65,
+  "us_aqi": 27,
+  "european_aqi": 30
+}

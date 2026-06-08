@@ -23538,3 +23538,1069 @@ where city_key is null
 [0m15:51:53.628185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b461f92f460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b461ef7ff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b461dd567f0>]}
 [0m15:51:53.629639 [debug] [MainThread]: Flushing usage events
 [0m15:51:54.045691 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:05:15.694678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790702af1400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7907037228e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7907021bed90>]}
+
+
+============================== 12:05:15.743728 | 01addba3-cd7e-4b6b-b0a3-7091617bb9e9 ==============================
+[0m12:05:15.743728 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m12:05:15.745883 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/dbt_project/logs', 'profiles_dir': '/opt/airflow/dbt_project', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt_project --project-dir /opt/airflow/dbt_project', 'send_anonymous_usage_stats': 'True'}
+[0m12:05:16.530243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790701e54400>]}
+[0m12:05:16.644264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790703775400>]}
+[0m12:05:16.646226 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m12:05:16.680189 [debug] [MainThread]: checksum: 4cfbbe2a671212f062e88a43cba5322b30b7e3e8e91b953aa4de249eeaade60f, vars: {}, profile: , target: , version: 1.9.0b2
+[0m12:05:17.149549 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:05:17.150512 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:05:17.251039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7907013c2f40>]}
+[0m12:05:17.597838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790700f00250>]}
+[0m12:05:17.598966 [info ] [MainThread]: Found 6 models, 6 data tests, 3 sources, 423 macros
+[0m12:05:17.599922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790700f93f10>]}
+[0m12:05:17.603395 [info ] [MainThread]: 
+[0m12:05:17.604392 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:05:17.605219 [info ] [MainThread]: 
+[0m12:05:17.606276 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m12:05:17.617582 [debug] [ThreadPool]: Acquiring new postgres connection 'list_airflow'
+[0m12:05:17.768950 [debug] [ThreadPool]: Using postgres connection "list_airflow"
+[0m12:05:17.770189 [debug] [ThreadPool]: On list_airflow: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "connection_name": "list_airflow"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m12:05:17.771014 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:05:17.786363 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.015 seconds
+[0m12:05:17.789320 [debug] [ThreadPool]: On list_airflow: Close
+[0m12:05:17.792812 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_airflow, now list_airflow_dbt_weather_restaurants)
+[0m12:05:17.803974 [debug] [ThreadPool]: Using postgres connection "list_airflow_dbt_weather_restaurants"
+[0m12:05:17.805203 [debug] [ThreadPool]: On list_airflow_dbt_weather_restaurants: BEGIN
+[0m12:05:17.805882 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:05:17.812727 [debug] [ThreadPool]: SQL status: BEGIN in 0.007 seconds
+[0m12:05:17.813639 [debug] [ThreadPool]: Using postgres connection "list_airflow_dbt_weather_restaurants"
+[0m12:05:17.814485 [debug] [ThreadPool]: On list_airflow_dbt_weather_restaurants: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "connection_name": "list_airflow_dbt_weather_restaurants"} */
+select
+      'airflow' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_weather_restaurants'
+    union all
+    select
+      'airflow' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_weather_restaurants'
+    union all
+    select
+      'airflow' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dbt_weather_restaurants'
+  
+[0m12:05:17.835071 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.020 seconds
+[0m12:05:17.838449 [debug] [ThreadPool]: On list_airflow_dbt_weather_restaurants: ROLLBACK
+[0m12:05:17.839635 [debug] [ThreadPool]: On list_airflow_dbt_weather_restaurants: Close
+[0m12:05:17.849675 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:17.850784 [debug] [MainThread]: On master: BEGIN
+[0m12:05:17.852026 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:05:17.857612 [debug] [MainThread]: SQL status: BEGIN in 0.005 seconds
+[0m12:05:17.858942 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:17.859851 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m12:05:17.878224 [debug] [MainThread]: SQL status: SELECT 3 in 0.017 seconds
+[0m12:05:17.881117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790700f3c130>]}
+[0m12:05:17.881929 [debug] [MainThread]: On master: ROLLBACK
+[0m12:05:17.882783 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:17.883413 [debug] [MainThread]: On master: BEGIN
+[0m12:05:17.884390 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m12:05:17.885272 [debug] [MainThread]: On master: COMMIT
+[0m12:05:17.886468 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:17.887179 [debug] [MainThread]: On master: COMMIT
+[0m12:05:17.888332 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:05:17.888976 [debug] [MainThread]: On master: Close
+[0m12:05:17.903059 [debug] [Thread-1  ]: Began running node model.weather_restaurants.stg_air_quality
+[0m12:05:17.903730 [debug] [Thread-2  ]: Began running node model.weather_restaurants.stg_restaurants
+[0m12:05:17.904326 [debug] [Thread-3  ]: Began running node model.weather_restaurants.stg_weather
+[0m12:05:17.905054 [info ] [Thread-1  ]: 1 of 6 START sql view model dbt_weather_restaurants.stg_air_quality ............ [RUN]
+[0m12:05:17.906253 [info ] [Thread-2  ]: 2 of 6 START sql view model dbt_weather_restaurants.stg_restaurants ............ [RUN]
+[0m12:05:17.908166 [info ] [Thread-3  ]: 3 of 6 START sql view model dbt_weather_restaurants.stg_weather ................ [RUN]
+[0m12:05:17.909094 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_airflow_dbt_weather_restaurants, now model.weather_restaurants.stg_air_quality)
+[0m12:05:17.910038 [debug] [Thread-2  ]: Acquiring new postgres connection 'model.weather_restaurants.stg_restaurants'
+[0m12:05:17.910967 [debug] [Thread-3  ]: Acquiring new postgres connection 'model.weather_restaurants.stg_weather'
+[0m12:05:17.911756 [debug] [Thread-1  ]: Began compiling node model.weather_restaurants.stg_air_quality
+[0m12:05:17.912584 [debug] [Thread-2  ]: Began compiling node model.weather_restaurants.stg_restaurants
+[0m12:05:17.913648 [debug] [Thread-3  ]: Began compiling node model.weather_restaurants.stg_weather
+[0m12:05:17.925646 [debug] [Thread-1  ]: Writing injected SQL for node "model.weather_restaurants.stg_air_quality"
+[0m12:05:17.932352 [debug] [Thread-2  ]: Writing injected SQL for node "model.weather_restaurants.stg_restaurants"
+[0m12:05:17.939388 [debug] [Thread-3  ]: Writing injected SQL for node "model.weather_restaurants.stg_weather"
+[0m12:05:17.947747 [debug] [Thread-2  ]: Began executing node model.weather_restaurants.stg_restaurants
+[0m12:05:17.948604 [debug] [Thread-1  ]: Began executing node model.weather_restaurants.stg_air_quality
+[0m12:05:17.959946 [debug] [Thread-3  ]: Began executing node model.weather_restaurants.stg_weather
+[0m12:05:18.035729 [debug] [Thread-2  ]: Writing runtime sql for node "model.weather_restaurants.stg_restaurants"
+[0m12:05:18.032474 [debug] [Thread-3  ]: Writing runtime sql for node "model.weather_restaurants.stg_weather"
+[0m12:05:18.037767 [debug] [Thread-1  ]: Writing runtime sql for node "model.weather_restaurants.stg_air_quality"
+[0m12:05:18.047803 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.stg_restaurants"
+[0m12:05:18.049112 [debug] [Thread-3  ]: Using postgres connection "model.weather_restaurants.stg_weather"
+[0m12:05:18.050622 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.stg_air_quality"
+[0m12:05:18.051667 [debug] [Thread-2  ]: On model.weather_restaurants.stg_restaurants: BEGIN
+[0m12:05:18.054845 [debug] [Thread-3  ]: On model.weather_restaurants.stg_weather: BEGIN
+[0m12:05:18.056038 [debug] [Thread-1  ]: On model.weather_restaurants.stg_air_quality: BEGIN
+[0m12:05:18.057235 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m12:05:18.058201 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m12:05:18.059585 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:05:18.067806 [debug] [Thread-2  ]: SQL status: BEGIN in 0.010 seconds
+[0m12:05:18.069204 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.stg_restaurants"
+[0m12:05:18.070828 [debug] [Thread-2  ]: On model.weather_restaurants.stg_restaurants: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_restaurants"} */
+
+  create view "airflow"."dbt_weather_restaurants"."stg_restaurants__dbt_tmp"
+    
+    
+  as (
+    -- Staging: normalize OpenStreetMap restaurant data
+
+
+
+SELECT
+    osm_id::bigint                                      AS restaurant_id,
+    city_key,
+    city_name,
+    COALESCE(NULLIF(TRIM(name), ''), 'Unknown')         AS restaurant_name,
+    CASE amenity
+        WHEN 'restaurant' THEN 'restaurant'
+        WHEN 'cafe'       THEN 'cafe'
+        WHEN 'fast_food'  THEN 'fast_food'
+        ELSE 'other'
+    END                                                 AS place_type,
+    COALESCE(NULLIF(TRIM(cuisine), ''), 'unknown')      AS cuisine,
+    ROUND(latitude::numeric, 6)                         AS latitude,
+    ROUND(longitude::numeric, 6)                        AS longitude,
+    opening_hours,
+    (ingested_at AT TIME ZONE 'UTC')::date              AS ingestion_date,
+    (ingested_at AT TIME ZONE 'UTC')::timestamp         AS ingested_at_utc
+FROM "airflow"."dbt_weather_restaurants"."restaurants_raw"
+WHERE osm_id IS NOT NULL
+  AND latitude IS NOT NULL
+  AND longitude IS NOT NULL
+  );
+[0m12:05:18.071628 [debug] [Thread-3  ]: SQL status: BEGIN in 0.014 seconds
+[0m12:05:18.072362 [debug] [Thread-1  ]: SQL status: BEGIN in 0.013 seconds
+[0m12:05:18.074920 [debug] [Thread-3  ]: Using postgres connection "model.weather_restaurants.stg_weather"
+[0m12:05:18.075975 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.stg_air_quality"
+[0m12:05:18.077038 [debug] [Thread-3  ]: On model.weather_restaurants.stg_weather: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_weather"} */
+
+  create view "airflow"."dbt_weather_restaurants"."stg_weather__dbt_tmp"
+    
+    
+  as (
+    -- models/staging/stg_weather.sql
+-- Normalize Open-Meteo weather data
+
+
+
+WITH raw_data AS (
+    SELECT * FROM "airflow"."dbt_weather_restaurants"."weather_raw"
+)
+
+SELECT
+    city_key,
+    city_name,
+    (ingested_at AT TIME ZONE 'UTC')::date              AS ingestion_date,
+    (ingested_at AT TIME ZONE 'UTC')::timestamp         AS ingested_at_utc,
+    ROUND(current_temperature::numeric, 1)              AS temperature_c,
+    ROUND(current_humidity::numeric, 0)                 AS humidity_pct,
+    ROUND(current_precipitation::numeric, 2)            AS precipitation_mm,
+    ROUND(current_wind_speed::numeric, 1)               AS wind_speed_kmh,
+    current_weather_code::integer                       AS weather_code,
+    CASE
+        WHEN current_weather_code::int = 0              THEN 'Clear sky'
+        WHEN current_weather_code::int IN (1,2,3)       THEN 'Partly cloudy'
+        WHEN current_weather_code::int IN (45,48)       THEN 'Foggy'
+        WHEN current_weather_code::int BETWEEN 51 AND 67 THEN 'Rainy'
+        WHEN current_weather_code::int BETWEEN 71 AND 77 THEN 'Snowy'
+        WHEN current_weather_code::int BETWEEN 80 AND 82 THEN 'Rain showers'
+        WHEN current_weather_code::int BETWEEN 95 AND 99 THEN 'Thunderstorm'
+        ELSE 'Other'
+    END                                                 AS weather_description,
+    CASE
+        WHEN current_weather_code::int = 0              THEN 'excellent'
+        WHEN current_weather_code::int IN (1,2,3)       THEN 'good'
+        WHEN current_weather_code::int IN (45,48)       THEN 'moderate'
+        WHEN current_weather_code::int BETWEEN 51 AND 82 THEN 'bad'
+        WHEN current_weather_code::int BETWEEN 95 AND 99 THEN 'very_bad'
+        ELSE 'unknown'
+    END                                                 AS weather_category,
+    CASE
+        WHEN current_weather_code::int = 0
+             AND current_temperature::numeric BETWEEN 15 AND 28
+             AND current_wind_speed::numeric < 20       THEN 10
+        WHEN current_weather_code::int IN (1,2,3)
+             AND current_temperature::numeric BETWEEN 10 AND 30 THEN 7
+        WHEN current_weather_code::int IN (45,48)       THEN 4
+        WHEN current_weather_code::int BETWEEN 51 AND 82 THEN 2
+        WHEN current_weather_code::int BETWEEN 95 AND 99 THEN 0
+        ELSE 5
+    END                                                 AS outdoor_comfort_score
+FROM raw_data
+WHERE city_key IS NOT NULL
+  );
+[0m12:05:18.078203 [debug] [Thread-1  ]: On model.weather_restaurants.stg_air_quality: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_air_quality"} */
+
+  create view "airflow"."dbt_weather_restaurants"."stg_air_quality__dbt_tmp"
+    
+    
+  as (
+    -- Staging: normalize Open-Meteo air quality data
+
+
+
+WITH raw_data AS (
+    SELECT * FROM "airflow"."dbt_weather_restaurants"."air_quality_raw"
+)
+
+SELECT
+    city_key,
+    city_name,
+    (ingested_at AT TIME ZONE 'UTC')::date              AS ingestion_date,
+    (ingested_at AT TIME ZONE 'UTC')::timestamp         AS ingested_at_utc,
+    selected_hour_utc,
+    ROUND(current_pm10::numeric, 1)                     AS pm10,
+    ROUND(current_pm2_5::numeric, 1)                    AS pm2_5,
+    ROUND(current_carbon_monoxide::numeric, 1)          AS carbon_monoxide,
+    ROUND(current_nitrogen_dioxide::numeric, 1)         AS nitrogen_dioxide,
+    ROUND(current_sulphur_dioxide::numeric, 1)          AS sulphur_dioxide,
+    ROUND(current_ozone::numeric, 1)                    AS ozone,
+    ROUND(current_dust::numeric, 1)                     AS dust,
+    ROUND(current_uv_index::numeric, 1)                 AS uv_index,
+    ROUND(current_us_aqi::numeric, 0)                   AS us_aqi,
+    ROUND(current_european_aqi::numeric, 0)             AS european_aqi,
+    CASE
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 20 THEN 'good'
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 40 THEN 'fair'
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 60 THEN 'moderate'
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 80 THEN 'poor'
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 100 THEN 'very_poor'
+        WHEN current_european_aqi IS NOT NULL THEN 'extremely_poor'
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 50 THEN 'good'
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 100 THEN 'moderate'
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 150 THEN 'unhealthy_sensitive'
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 200 THEN 'unhealthy'
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 300 THEN 'very_unhealthy'
+        WHEN current_us_aqi IS NOT NULL THEN 'hazardous'
+        ELSE 'unknown'
+    END                                                 AS air_quality_category,
+    CASE
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 20 THEN 10
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 40 THEN 8
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 60 THEN 5
+        WHEN current_european_aqi IS NOT NULL AND current_european_aqi <= 80 THEN 2
+        WHEN current_european_aqi IS NOT NULL THEN 0
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 50 THEN 10
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 100 THEN 8
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 150 THEN 5
+        WHEN current_us_aqi IS NOT NULL AND current_us_aqi <= 200 THEN 2
+        WHEN current_us_aqi IS NOT NULL THEN 0
+        ELSE 5
+    END                                                 AS air_quality_score
+FROM raw_data
+WHERE city_key IS NOT NULL
+  );
+[0m12:05:18.115020 [debug] [Thread-2  ]: SQL status: CREATE VIEW in 0.041 seconds
+[0m12:05:18.116024 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.036 seconds
+[0m12:05:18.117008 [debug] [Thread-3  ]: SQL status: CREATE VIEW in 0.037 seconds
+[0m12:05:18.144676 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.stg_air_quality"
+[0m12:05:18.146320 [debug] [Thread-3  ]: Using postgres connection "model.weather_restaurants.stg_weather"
+[0m12:05:18.149015 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.stg_restaurants"
+[0m12:05:18.149842 [debug] [Thread-1  ]: On model.weather_restaurants.stg_air_quality: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_air_quality"} */
+alter table "airflow"."dbt_weather_restaurants"."stg_air_quality" rename to "stg_air_quality__dbt_backup"
+[0m12:05:18.150877 [debug] [Thread-3  ]: On model.weather_restaurants.stg_weather: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_weather"} */
+alter table "airflow"."dbt_weather_restaurants"."stg_weather" rename to "stg_weather__dbt_backup"
+[0m12:05:18.151828 [debug] [Thread-2  ]: On model.weather_restaurants.stg_restaurants: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_restaurants"} */
+alter table "airflow"."dbt_weather_restaurants"."stg_restaurants" rename to "stg_restaurants__dbt_backup"
+[0m12:05:18.155661 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.001 seconds
+[0m12:05:18.156524 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.004 seconds
+[0m12:05:18.157446 [debug] [Thread-3  ]: SQL status: ALTER TABLE in 0.004 seconds
+[0m12:05:18.162297 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.stg_restaurants"
+[0m12:05:18.171704 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.stg_air_quality"
+[0m12:05:18.177294 [debug] [Thread-3  ]: Using postgres connection "model.weather_restaurants.stg_weather"
+[0m12:05:18.178557 [debug] [Thread-2  ]: On model.weather_restaurants.stg_restaurants: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_restaurants"} */
+alter table "airflow"."dbt_weather_restaurants"."stg_restaurants__dbt_tmp" rename to "stg_restaurants"
+[0m12:05:18.179641 [debug] [Thread-1  ]: On model.weather_restaurants.stg_air_quality: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_air_quality"} */
+alter table "airflow"."dbt_weather_restaurants"."stg_air_quality__dbt_tmp" rename to "stg_air_quality"
+[0m12:05:18.180777 [debug] [Thread-3  ]: On model.weather_restaurants.stg_weather: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_weather"} */
+alter table "airflow"."dbt_weather_restaurants"."stg_weather__dbt_tmp" rename to "stg_weather"
+[0m12:05:18.182723 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.001 seconds
+[0m12:05:18.189594 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.006 seconds
+[0m12:05:18.195601 [debug] [Thread-3  ]: SQL status: ALTER TABLE in 0.012 seconds
+[0m12:05:18.220407 [debug] [Thread-1  ]: On model.weather_restaurants.stg_air_quality: COMMIT
+[0m12:05:18.224385 [debug] [Thread-2  ]: On model.weather_restaurants.stg_restaurants: COMMIT
+[0m12:05:18.228277 [debug] [Thread-3  ]: On model.weather_restaurants.stg_weather: COMMIT
+[0m12:05:18.229532 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.stg_air_quality"
+[0m12:05:18.230623 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.stg_restaurants"
+[0m12:05:18.231657 [debug] [Thread-3  ]: Using postgres connection "model.weather_restaurants.stg_weather"
+[0m12:05:18.233002 [debug] [Thread-1  ]: On model.weather_restaurants.stg_air_quality: COMMIT
+[0m12:05:18.234208 [debug] [Thread-2  ]: On model.weather_restaurants.stg_restaurants: COMMIT
+[0m12:05:18.235194 [debug] [Thread-3  ]: On model.weather_restaurants.stg_weather: COMMIT
+[0m12:05:18.238040 [debug] [Thread-1  ]: SQL status: COMMIT in 0.002 seconds
+[0m12:05:18.239138 [debug] [Thread-2  ]: SQL status: COMMIT in 0.003 seconds
+[0m12:05:18.240155 [debug] [Thread-3  ]: SQL status: COMMIT in 0.003 seconds
+[0m12:05:18.254793 [debug] [Thread-1  ]: Applying DROP to: "airflow"."dbt_weather_restaurants"."stg_air_quality__dbt_backup"
+[0m12:05:18.259232 [debug] [Thread-2  ]: Applying DROP to: "airflow"."dbt_weather_restaurants"."stg_restaurants__dbt_backup"
+[0m12:05:18.264403 [debug] [Thread-3  ]: Applying DROP to: "airflow"."dbt_weather_restaurants"."stg_weather__dbt_backup"
+[0m12:05:18.272626 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.stg_air_quality"
+[0m12:05:18.274326 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.stg_restaurants"
+[0m12:05:18.276677 [debug] [Thread-3  ]: Using postgres connection "model.weather_restaurants.stg_weather"
+[0m12:05:18.277971 [debug] [Thread-1  ]: On model.weather_restaurants.stg_air_quality: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_air_quality"} */
+drop view if exists "airflow"."dbt_weather_restaurants"."stg_air_quality__dbt_backup" cascade
+[0m12:05:18.278997 [debug] [Thread-2  ]: On model.weather_restaurants.stg_restaurants: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_restaurants"} */
+drop view if exists "airflow"."dbt_weather_restaurants"."stg_restaurants__dbt_backup" cascade
+[0m12:05:18.279940 [debug] [Thread-3  ]: On model.weather_restaurants.stg_weather: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.stg_weather"} */
+drop view if exists "airflow"."dbt_weather_restaurants"."stg_weather__dbt_backup" cascade
+[0m12:05:18.292088 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.011 seconds
+[0m12:05:18.292906 [debug] [Thread-3  ]: SQL status: DROP VIEW in 0.010 seconds
+[0m12:05:18.293650 [debug] [Thread-2  ]: SQL status: DROP VIEW in 0.012 seconds
+[0m12:05:18.299097 [debug] [Thread-1  ]: On model.weather_restaurants.stg_air_quality: Close
+[0m12:05:18.302403 [debug] [Thread-3  ]: On model.weather_restaurants.stg_weather: Close
+[0m12:05:18.305419 [debug] [Thread-2  ]: On model.weather_restaurants.stg_restaurants: Close
+[0m12:05:18.309611 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7907003cfd60>]}
+[0m12:05:18.311352 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7907003cfb80>]}
+[0m12:05:18.312879 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7907003cfa00>]}
+[0m12:05:18.314246 [info ] [Thread-1  ]: 1 of 6 OK created sql view model dbt_weather_restaurants.stg_air_quality ....... [[32mCREATE VIEW[0m in 0.40s]
+[0m12:05:18.316313 [info ] [Thread-3  ]: 3 of 6 OK created sql view model dbt_weather_restaurants.stg_weather ........... [[32mCREATE VIEW[0m in 0.40s]
+[0m12:05:18.319417 [debug] [Thread-1  ]: Finished running node model.weather_restaurants.stg_air_quality
+[0m12:05:18.317841 [info ] [Thread-2  ]: 2 of 6 OK created sql view model dbt_weather_restaurants.stg_restaurants ....... [[32mCREATE VIEW[0m in 0.40s]
+[0m12:05:18.320837 [debug] [Thread-3  ]: Finished running node model.weather_restaurants.stg_weather
+[0m12:05:18.322761 [debug] [Thread-2  ]: Finished running node model.weather_restaurants.stg_restaurants
+[0m12:05:18.325996 [debug] [Thread-4  ]: Began running node model.weather_restaurants.mart_city_dining_score
+[0m12:05:18.327065 [debug] [Thread-1  ]: Began running node model.weather_restaurants.mart_cuisine_analysis
+[0m12:05:18.327980 [info ] [Thread-4  ]: 4 of 6 START sql table model dbt_weather_restaurants.mart_city_dining_score .... [RUN]
+[0m12:05:18.329572 [info ] [Thread-1  ]: 5 of 6 START sql table model dbt_weather_restaurants.mart_cuisine_analysis ..... [RUN]
+[0m12:05:18.331635 [debug] [Thread-4  ]: Acquiring new postgres connection 'model.weather_restaurants.mart_city_dining_score'
+[0m12:05:18.333217 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.weather_restaurants.stg_air_quality, now model.weather_restaurants.mart_cuisine_analysis)
+[0m12:05:18.334551 [debug] [Thread-4  ]: Began compiling node model.weather_restaurants.mart_city_dining_score
+[0m12:05:18.335723 [debug] [Thread-1  ]: Began compiling node model.weather_restaurants.mart_cuisine_analysis
+[0m12:05:18.346566 [debug] [Thread-4  ]: Writing injected SQL for node "model.weather_restaurants.mart_city_dining_score"
+[0m12:05:18.352627 [debug] [Thread-1  ]: Writing injected SQL for node "model.weather_restaurants.mart_cuisine_analysis"
+[0m12:05:18.361795 [debug] [Thread-4  ]: Began executing node model.weather_restaurants.mart_city_dining_score
+[0m12:05:18.363307 [debug] [Thread-1  ]: Began executing node model.weather_restaurants.mart_cuisine_analysis
+[0m12:05:18.527841 [debug] [Thread-4  ]: Writing runtime sql for node "model.weather_restaurants.mart_city_dining_score"
+[0m12:05:18.533553 [debug] [Thread-1  ]: Writing runtime sql for node "model.weather_restaurants.mart_cuisine_analysis"
+[0m12:05:18.543862 [debug] [Thread-4  ]: Using postgres connection "model.weather_restaurants.mart_city_dining_score"
+[0m12:05:18.545602 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.mart_cuisine_analysis"
+[0m12:05:18.546802 [debug] [Thread-4  ]: On model.weather_restaurants.mart_city_dining_score: BEGIN
+[0m12:05:18.548327 [debug] [Thread-1  ]: On model.weather_restaurants.mart_cuisine_analysis: BEGIN
+[0m12:05:18.549551 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m12:05:18.550961 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:05:18.558444 [debug] [Thread-1  ]: SQL status: BEGIN in 0.007 seconds
+[0m12:05:18.560200 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.mart_cuisine_analysis"
+[0m12:05:18.561501 [debug] [Thread-4  ]: SQL status: BEGIN in 0.012 seconds
+[0m12:05:18.562621 [debug] [Thread-1  ]: On model.weather_restaurants.mart_cuisine_analysis: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_cuisine_analysis"} */
+
+  
+    
+
+  create  table "airflow"."dbt_weather_restaurants"."mart_cuisine_analysis__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- Cuisine diversity analysis per city
+
+
+
+WITH restaurants AS (
+    SELECT * FROM "airflow"."dbt_weather_restaurants"."stg_restaurants"
+    WHERE cuisine != 'unknown'
+),
+
+counts AS (
+    SELECT
+        city_key, city_name, ingestion_date, cuisine, place_type,
+        COUNT(*) AS venue_count
+    FROM restaurants
+    GROUP BY city_key, city_name, ingestion_date, cuisine, place_type
+),
+
+ranked AS (
+    SELECT *,
+        RANK() OVER (PARTITION BY city_key, ingestion_date ORDER BY venue_count DESC) AS cuisine_rank,
+        ROUND(venue_count::numeric / SUM(venue_count) OVER (PARTITION BY city_key, ingestion_date) * 100, 1) AS share_pct
+    FROM counts
+)
+
+SELECT * FROM ranked
+WHERE cuisine_rank <= 15
+ORDER BY ingestion_date DESC, city_key, cuisine_rank
+  );
+  
+[0m12:05:18.564047 [debug] [Thread-4  ]: Using postgres connection "model.weather_restaurants.mart_city_dining_score"
+[0m12:05:18.567756 [debug] [Thread-4  ]: On model.weather_restaurants.mart_city_dining_score: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_city_dining_score"} */
+
+  
+    
+
+  create  table "airflow"."dbt_weather_restaurants"."mart_city_dining_score__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- MAIN OUTPUT: City Dining Score
+-- Question: Which city is best to dine out today based on weather + restaurant availability?
+
+
+
+WITH weather AS (
+    SELECT * FROM "airflow"."dbt_weather_restaurants"."stg_weather"
+),
+
+air_quality AS (
+    SELECT * FROM "airflow"."dbt_weather_restaurants"."stg_air_quality"
+),
+
+restaurant_stats AS (
+    SELECT
+        city_key,
+        city_name,
+        ingestion_date,
+        COUNT(*)                                            AS total_venues,
+        COUNT(*) FILTER (WHERE place_type = 'restaurant')  AS restaurant_count,
+        COUNT(*) FILTER (WHERE place_type = 'cafe')        AS cafe_count,
+        COUNT(*) FILTER (WHERE place_type = 'fast_food')   AS fast_food_count,
+        COUNT(DISTINCT cuisine)
+            FILTER (WHERE cuisine != 'unknown')            AS cuisine_diversity
+    FROM "airflow"."dbt_weather_restaurants"."stg_restaurants"
+    GROUP BY city_key, city_name, ingestion_date
+),
+
+combined AS (
+    SELECT
+        w.city_key,
+        w.city_name,
+        w.ingestion_date,
+        w.ingested_at_utc,
+        w.temperature_c,
+        w.humidity_pct,
+        w.precipitation_mm,
+        w.wind_speed_kmh,
+        w.weather_description,
+        w.weather_category,
+        w.outdoor_comfort_score,
+        a.pm10,
+        a.pm2_5,
+        a.carbon_monoxide,
+        a.nitrogen_dioxide,
+        a.sulphur_dioxide,
+        a.ozone,
+        a.dust,
+        a.uv_index,
+        a.us_aqi,
+        a.european_aqi,
+        COALESCE(a.air_quality_category, 'unknown') AS air_quality_category,
+        COALESCE(a.air_quality_score, 5) AS air_quality_score,
+        COALESCE(r.total_venues, 0)        AS total_venues,
+        COALESCE(r.restaurant_count, 0)    AS restaurant_count,
+        COALESCE(r.cafe_count, 0)          AS cafe_count,
+        COALESCE(r.fast_food_count, 0)     AS fast_food_count,
+        COALESCE(r.cuisine_diversity, 0)   AS cuisine_diversity,
+        ROUND(LEAST(COALESCE(r.total_venues, 0)::numeric / 100.0, 1.0) * 10, 1) AS venue_density_score,
+        ROUND(LEAST(COALESCE(r.cuisine_diversity, 0)::numeric / 20.0, 1.0) * 10, 1) AS cuisine_diversity_score
+    FROM weather w
+    LEFT JOIN air_quality a
+        ON w.city_key = a.city_key
+       AND w.ingestion_date = a.ingestion_date
+    LEFT JOIN restaurant_stats r
+        ON w.city_key = r.city_key
+       AND w.ingestion_date = r.ingestion_date
+),
+
+final AS (
+    SELECT *,
+        ROUND(
+            (outdoor_comfort_score * 0.35)
+            + (air_quality_score * 0.25)
+            + (venue_density_score * 0.20)
+            + (cuisine_diversity_score * 0.20)
+        , 2) AS dining_score,
+        CASE
+            WHEN air_quality_score <= 2
+                THEN 'Poor air quality - prefer indoor dining'
+            WHEN (outdoor_comfort_score*0.35 + air_quality_score*0.25 + venue_density_score*0.20 + cuisine_diversity_score*0.20) >= 7
+                THEN 'Excellent day to dine out!'
+            WHEN (outdoor_comfort_score*0.35 + air_quality_score*0.25 + venue_density_score*0.20 + cuisine_diversity_score*0.20) >= 5
+                THEN 'Good day - consider outdoor seating'
+            WHEN (outdoor_comfort_score*0.35 + air_quality_score*0.25 + venue_density_score*0.20 + cuisine_diversity_score*0.20) >= 3
+                THEN 'Moderate - prefer indoor restaurants'
+            ELSE 'Bad weather - stay in or order delivery'
+        END AS dining_recommendation,
+        RANK() OVER (
+            PARTITION BY ingestion_date
+            ORDER BY (outdoor_comfort_score*0.35 + air_quality_score*0.25 + venue_density_score*0.20 + cuisine_diversity_score*0.20) DESC
+        ) AS city_rank_today
+    FROM combined
+)
+
+SELECT * FROM final
+ORDER BY ingestion_date DESC, city_rank_today ASC
+  );
+  
+[0m12:05:18.689213 [debug] [Thread-1  ]: SQL status: SELECT 1465 in 0.124 seconds
+[0m12:05:18.699855 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.mart_cuisine_analysis"
+[0m12:05:18.701044 [debug] [Thread-1  ]: On model.weather_restaurants.mart_cuisine_analysis: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_cuisine_analysis"} */
+alter table "airflow"."dbt_weather_restaurants"."mart_cuisine_analysis" rename to "mart_cuisine_analysis__dbt_backup"
+[0m12:05:18.704467 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.001 seconds
+[0m12:05:18.714527 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.mart_cuisine_analysis"
+[0m12:05:18.715911 [debug] [Thread-1  ]: On model.weather_restaurants.mart_cuisine_analysis: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_cuisine_analysis"} */
+alter table "airflow"."dbt_weather_restaurants"."mart_cuisine_analysis__dbt_tmp" rename to "mart_cuisine_analysis"
+[0m12:05:18.717666 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.001 seconds
+[0m12:05:18.733330 [debug] [Thread-1  ]: On model.weather_restaurants.mart_cuisine_analysis: COMMIT
+[0m12:05:18.735191 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.mart_cuisine_analysis"
+[0m12:05:18.738348 [debug] [Thread-1  ]: On model.weather_restaurants.mart_cuisine_analysis: COMMIT
+[0m12:05:18.744927 [debug] [Thread-1  ]: SQL status: COMMIT in 0.002 seconds
+[0m12:05:18.758155 [debug] [Thread-1  ]: Applying DROP to: "airflow"."dbt_weather_restaurants"."mart_cuisine_analysis__dbt_backup"
+[0m12:05:18.765123 [debug] [Thread-1  ]: Using postgres connection "model.weather_restaurants.mart_cuisine_analysis"
+[0m12:05:18.766258 [debug] [Thread-4  ]: SQL status: SELECT 52 in 0.194 seconds
+[0m12:05:18.767432 [debug] [Thread-1  ]: On model.weather_restaurants.mart_cuisine_analysis: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_cuisine_analysis"} */
+drop table if exists "airflow"."dbt_weather_restaurants"."mart_cuisine_analysis__dbt_backup" cascade
+[0m12:05:18.776680 [debug] [Thread-4  ]: Using postgres connection "model.weather_restaurants.mart_city_dining_score"
+[0m12:05:18.778045 [debug] [Thread-4  ]: On model.weather_restaurants.mart_city_dining_score: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_city_dining_score"} */
+alter table "airflow"."dbt_weather_restaurants"."mart_city_dining_score" rename to "mart_city_dining_score__dbt_backup"
+[0m12:05:18.783772 [debug] [Thread-4  ]: SQL status: ALTER TABLE in 0.002 seconds
+[0m12:05:18.793073 [debug] [Thread-4  ]: Using postgres connection "model.weather_restaurants.mart_city_dining_score"
+[0m12:05:18.794190 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.017 seconds
+[0m12:05:18.795169 [debug] [Thread-4  ]: On model.weather_restaurants.mart_city_dining_score: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_city_dining_score"} */
+alter table "airflow"."dbt_weather_restaurants"."mart_city_dining_score__dbt_tmp" rename to "mart_city_dining_score"
+[0m12:05:18.798895 [debug] [Thread-1  ]: On model.weather_restaurants.mart_cuisine_analysis: Close
+[0m12:05:18.800852 [debug] [Thread-4  ]: SQL status: ALTER TABLE in 0.000 seconds
+[0m12:05:18.802138 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7906fffe7f70>]}
+[0m12:05:18.805686 [debug] [Thread-4  ]: On model.weather_restaurants.mart_city_dining_score: COMMIT
+[0m12:05:18.807177 [info ] [Thread-1  ]: 5 of 6 OK created sql table model dbt_weather_restaurants.mart_cuisine_analysis  [[32mSELECT 1465[0m in 0.47s]
+[0m12:05:18.808118 [debug] [Thread-4  ]: Using postgres connection "model.weather_restaurants.mart_city_dining_score"
+[0m12:05:18.809393 [debug] [Thread-1  ]: Finished running node model.weather_restaurants.mart_cuisine_analysis
+[0m12:05:18.810462 [debug] [Thread-4  ]: On model.weather_restaurants.mart_city_dining_score: COMMIT
+[0m12:05:18.813513 [debug] [Thread-4  ]: SQL status: COMMIT in 0.002 seconds
+[0m12:05:18.818719 [debug] [Thread-4  ]: Applying DROP to: "airflow"."dbt_weather_restaurants"."mart_city_dining_score__dbt_backup"
+[0m12:05:18.820409 [debug] [Thread-4  ]: Using postgres connection "model.weather_restaurants.mart_city_dining_score"
+[0m12:05:18.821538 [debug] [Thread-4  ]: On model.weather_restaurants.mart_city_dining_score: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_city_dining_score"} */
+drop table if exists "airflow"."dbt_weather_restaurants"."mart_city_dining_score__dbt_backup" cascade
+[0m12:05:18.826356 [debug] [Thread-4  ]: SQL status: DROP TABLE in 0.004 seconds
+[0m12:05:18.828671 [debug] [Thread-4  ]: On model.weather_restaurants.mart_city_dining_score: Close
+[0m12:05:18.829810 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7907003a0fd0>]}
+[0m12:05:18.831600 [info ] [Thread-4  ]: 4 of 6 OK created sql table model dbt_weather_restaurants.mart_city_dining_score  [[32mSELECT 52[0m in 0.50s]
+[0m12:05:18.833073 [debug] [Thread-4  ]: Finished running node model.weather_restaurants.mart_city_dining_score
+[0m12:05:18.834809 [debug] [Thread-2  ]: Began running node model.weather_restaurants.mart_weekly_trend
+[0m12:05:18.835812 [info ] [Thread-2  ]: 6 of 6 START sql table model dbt_weather_restaurants.mart_weekly_trend ......... [RUN]
+[0m12:05:18.836971 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.weather_restaurants.stg_restaurants, now model.weather_restaurants.mart_weekly_trend)
+[0m12:05:18.837989 [debug] [Thread-2  ]: Began compiling node model.weather_restaurants.mart_weekly_trend
+[0m12:05:18.843111 [debug] [Thread-2  ]: Writing injected SQL for node "model.weather_restaurants.mart_weekly_trend"
+[0m12:05:18.852718 [debug] [Thread-2  ]: Began executing node model.weather_restaurants.mart_weekly_trend
+[0m12:05:18.859024 [debug] [Thread-2  ]: Writing runtime sql for node "model.weather_restaurants.mart_weekly_trend"
+[0m12:05:18.867508 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.mart_weekly_trend"
+[0m12:05:18.868304 [debug] [Thread-2  ]: On model.weather_restaurants.mart_weekly_trend: BEGIN
+[0m12:05:18.869012 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m12:05:18.873641 [debug] [Thread-2  ]: SQL status: BEGIN in 0.005 seconds
+[0m12:05:18.874524 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.mart_weekly_trend"
+[0m12:05:18.875244 [debug] [Thread-2  ]: On model.weather_restaurants.mart_weekly_trend: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_weekly_trend"} */
+
+  
+    
+
+  create  table "airflow"."dbt_weather_restaurants"."mart_weekly_trend__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- Weekly trend: dining scores over 7 days
+
+
+
+WITH daily AS (
+    SELECT * FROM "airflow"."dbt_weather_restaurants"."mart_city_dining_score"
+    WHERE ingestion_date >= (
+        SELECT MAX(ingestion_date) - INTERVAL '7 days'
+        FROM "airflow"."dbt_weather_restaurants"."mart_city_dining_score"
+    )
+)
+
+SELECT *,
+    dining_score - LAG(dining_score) OVER (PARTITION BY city_key ORDER BY ingestion_date) AS score_change,
+    AVG(dining_score) OVER (PARTITION BY city_key ORDER BY ingestion_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS avg_score_7d,
+    AVG(air_quality_score) OVER (PARTITION BY city_key ORDER BY ingestion_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS avg_air_quality_score_7d
+FROM daily
+ORDER BY ingestion_date DESC, city_key
+  );
+  
+[0m12:05:18.885287 [debug] [Thread-2  ]: SQL status: SELECT 28 in 0.009 seconds
+[0m12:05:18.890110 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.mart_weekly_trend"
+[0m12:05:18.890988 [debug] [Thread-2  ]: On model.weather_restaurants.mart_weekly_trend: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_weekly_trend"} */
+alter table "airflow"."dbt_weather_restaurants"."mart_weekly_trend" rename to "mart_weekly_trend__dbt_backup"
+[0m12:05:18.892308 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.001 seconds
+[0m12:05:18.896771 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.mart_weekly_trend"
+[0m12:05:18.897536 [debug] [Thread-2  ]: On model.weather_restaurants.mart_weekly_trend: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_weekly_trend"} */
+alter table "airflow"."dbt_weather_restaurants"."mart_weekly_trend__dbt_tmp" rename to "mart_weekly_trend"
+[0m12:05:18.898795 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.000 seconds
+[0m12:05:18.901613 [debug] [Thread-2  ]: On model.weather_restaurants.mart_weekly_trend: COMMIT
+[0m12:05:18.902361 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.mart_weekly_trend"
+[0m12:05:18.903134 [debug] [Thread-2  ]: On model.weather_restaurants.mart_weekly_trend: COMMIT
+[0m12:05:18.905024 [debug] [Thread-2  ]: SQL status: COMMIT in 0.001 seconds
+[0m12:05:18.909205 [debug] [Thread-2  ]: Applying DROP to: "airflow"."dbt_weather_restaurants"."mart_weekly_trend__dbt_backup"
+[0m12:05:18.910644 [debug] [Thread-2  ]: Using postgres connection "model.weather_restaurants.mart_weekly_trend"
+[0m12:05:18.911484 [debug] [Thread-2  ]: On model.weather_restaurants.mart_weekly_trend: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "model.weather_restaurants.mart_weekly_trend"} */
+drop table if exists "airflow"."dbt_weather_restaurants"."mart_weekly_trend__dbt_backup" cascade
+[0m12:05:18.915421 [debug] [Thread-2  ]: SQL status: DROP TABLE in 0.003 seconds
+[0m12:05:18.917472 [debug] [Thread-2  ]: On model.weather_restaurants.mart_weekly_trend: Close
+[0m12:05:18.918453 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01addba3-cd7e-4b6b-b0a3-7091617bb9e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7906fff47b80>]}
+[0m12:05:18.919696 [info ] [Thread-2  ]: 6 of 6 OK created sql table model dbt_weather_restaurants.mart_weekly_trend .... [[32mSELECT 28[0m in 0.08s]
+[0m12:05:18.921027 [debug] [Thread-2  ]: Finished running node model.weather_restaurants.mart_weekly_trend
+[0m12:05:18.923797 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:18.924476 [debug] [MainThread]: On master: BEGIN
+[0m12:05:18.925104 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:05:18.929583 [debug] [MainThread]: SQL status: BEGIN in 0.004 seconds
+[0m12:05:18.930447 [debug] [MainThread]: On master: COMMIT
+[0m12:05:18.931159 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:18.931890 [debug] [MainThread]: On master: COMMIT
+[0m12:05:18.932690 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:05:18.933384 [debug] [MainThread]: On master: Close
+[0m12:05:18.934300 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:05:18.935010 [debug] [MainThread]: Connection 'model.weather_restaurants.mart_cuisine_analysis' was properly closed.
+[0m12:05:18.935673 [debug] [MainThread]: Connection 'model.weather_restaurants.mart_weekly_trend' was properly closed.
+[0m12:05:18.936257 [debug] [MainThread]: Connection 'model.weather_restaurants.stg_weather' was properly closed.
+[0m12:05:18.936968 [debug] [MainThread]: Connection 'model.weather_restaurants.mart_city_dining_score' was properly closed.
+[0m12:05:18.937786 [info ] [MainThread]: 
+[0m12:05:18.938546 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 1.33 seconds (1.33s).
+[0m12:05:18.940783 [debug] [MainThread]: Command end result
+[0m12:05:19.006917 [info ] [MainThread]: 
+[0m12:05:19.007863 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:05:19.008584 [info ] [MainThread]: 
+[0m12:05:19.009297 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m12:05:19.012432 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.477762, "process_user_time": 5.14031, "process_kernel_time": 2.66924, "process_mem_max_rss": "108004", "process_in_blocks": "3416", "process_out_blocks": "1880"}
+[0m12:05:19.013495 [debug] [MainThread]: Command `dbt run` succeeded at 12:05:19.013298 after 3.48 seconds
+[0m12:05:19.014279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790702af1400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790702f03280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79070069cf10>]}
+[0m12:05:19.018788 [debug] [MainThread]: Flushing usage events
+[0m12:05:19.875809 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:05:24.386672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eba5f8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eba3541f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eb9d93430>]}
+
+
+============================== 12:05:24.397891 | 53be8ba0-88a9-4b38-9a70-4b618eac3449 ==============================
+[0m12:05:24.397891 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m12:05:24.398899 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbt_project/logs', 'profiles_dir': '/opt/airflow/dbt_project', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test --profiles-dir /opt/airflow/dbt_project --project-dir /opt/airflow/dbt_project', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:05:24.785167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53be8ba0-88a9-4b38-9a70-4b618eac3449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eb9165400>]}
+[0m12:05:24.927411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53be8ba0-88a9-4b38-9a70-4b618eac3449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eb91bef10>]}
+[0m12:05:24.930007 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m12:05:24.963637 [debug] [MainThread]: checksum: 4cfbbe2a671212f062e88a43cba5322b30b7e3e8e91b953aa4de249eeaade60f, vars: {}, profile: , target: , version: 1.9.0b2
+[0m12:05:25.605991 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:05:25.607437 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:05:25.774628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '53be8ba0-88a9-4b38-9a70-4b618eac3449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eb8859e80>]}
+[0m12:05:26.209241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '53be8ba0-88a9-4b38-9a70-4b618eac3449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eb848adf0>]}
+[0m12:05:26.210351 [info ] [MainThread]: Found 6 models, 6 data tests, 3 sources, 423 macros
+[0m12:05:26.211302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53be8ba0-88a9-4b38-9a70-4b618eac3449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eb88a0e20>]}
+[0m12:05:26.215360 [info ] [MainThread]: 
+[0m12:05:26.216492 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:05:26.217273 [info ] [MainThread]: 
+[0m12:05:26.218304 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m12:05:26.226248 [debug] [ThreadPool]: Acquiring new postgres connection 'list_airflow_dbt_weather_restaurants'
+[0m12:05:26.300840 [debug] [ThreadPool]: Using postgres connection "list_airflow_dbt_weather_restaurants"
+[0m12:05:26.301872 [debug] [ThreadPool]: On list_airflow_dbt_weather_restaurants: BEGIN
+[0m12:05:26.302710 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:05:26.309353 [debug] [ThreadPool]: SQL status: BEGIN in 0.007 seconds
+[0m12:05:26.310609 [debug] [ThreadPool]: Using postgres connection "list_airflow_dbt_weather_restaurants"
+[0m12:05:26.311688 [debug] [ThreadPool]: On list_airflow_dbt_weather_restaurants: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "connection_name": "list_airflow_dbt_weather_restaurants"} */
+select
+      'airflow' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_weather_restaurants'
+    union all
+    select
+      'airflow' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_weather_restaurants'
+    union all
+    select
+      'airflow' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dbt_weather_restaurants'
+  
+[0m12:05:26.315431 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.003 seconds
+[0m12:05:26.318055 [debug] [ThreadPool]: On list_airflow_dbt_weather_restaurants: ROLLBACK
+[0m12:05:26.319269 [debug] [ThreadPool]: On list_airflow_dbt_weather_restaurants: Close
+[0m12:05:26.331051 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:26.332343 [debug] [MainThread]: On master: BEGIN
+[0m12:05:26.333332 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:05:26.338712 [debug] [MainThread]: SQL status: BEGIN in 0.005 seconds
+[0m12:05:26.339702 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:26.340689 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m12:05:26.350593 [debug] [MainThread]: SQL status: SELECT 3 in 0.008 seconds
+[0m12:05:26.355041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53be8ba0-88a9-4b38-9a70-4b618eac3449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eb84ae2e0>]}
+[0m12:05:26.356577 [debug] [MainThread]: On master: ROLLBACK
+[0m12:05:26.357987 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:26.359383 [debug] [MainThread]: On master: BEGIN
+[0m12:05:26.361416 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m12:05:26.362220 [debug] [MainThread]: On master: COMMIT
+[0m12:05:26.363031 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:26.363777 [debug] [MainThread]: On master: COMMIT
+[0m12:05:26.364838 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:05:26.365979 [debug] [MainThread]: On master: Close
+[0m12:05:26.378538 [debug] [Thread-1  ]: Began running node test.weather_restaurants.assert_all_cities_present
+[0m12:05:26.379547 [debug] [Thread-2  ]: Began running node test.weather_restaurants.assert_dining_score_range
+[0m12:05:26.380530 [debug] [Thread-3  ]: Began running node test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9
+[0m12:05:26.382141 [debug] [Thread-4  ]: Began running node test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb
+[0m12:05:26.381562 [info ] [Thread-1  ]: 1 of 6 START test assert_all_cities_present .................................... [RUN]
+[0m12:05:26.383347 [info ] [Thread-2  ]: 2 of 6 START test assert_dining_score_range .................................... [RUN]
+[0m12:05:26.384450 [info ] [Thread-3  ]: 3 of 6 START test not_null_mart_city_dining_score_city_key ..................... [RUN]
+[0m12:05:26.385284 [info ] [Thread-4  ]: 4 of 6 START test not_null_stg_air_quality_city_key ............................ [RUN]
+[0m12:05:26.386385 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_airflow_dbt_weather_restaurants, now test.weather_restaurants.assert_all_cities_present)
+[0m12:05:26.387945 [debug] [Thread-2  ]: Acquiring new postgres connection 'test.weather_restaurants.assert_dining_score_range'
+[0m12:05:26.389169 [debug] [Thread-3  ]: Acquiring new postgres connection 'test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9'
+[0m12:05:26.390289 [debug] [Thread-4  ]: Acquiring new postgres connection 'test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb'
+[0m12:05:26.391314 [debug] [Thread-1  ]: Began compiling node test.weather_restaurants.assert_all_cities_present
+[0m12:05:26.392255 [debug] [Thread-2  ]: Began compiling node test.weather_restaurants.assert_dining_score_range
+[0m12:05:26.393226 [debug] [Thread-3  ]: Began compiling node test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9
+[0m12:05:26.394643 [debug] [Thread-4  ]: Began compiling node test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb
+[0m12:05:26.413625 [debug] [Thread-1  ]: Writing injected SQL for node "test.weather_restaurants.assert_all_cities_present"
+[0m12:05:26.415100 [debug] [Thread-2  ]: Writing injected SQL for node "test.weather_restaurants.assert_dining_score_range"
+[0m12:05:26.454193 [debug] [Thread-4  ]: Writing injected SQL for node "test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb"
+[0m12:05:26.457922 [debug] [Thread-3  ]: Writing injected SQL for node "test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9"
+[0m12:05:26.461339 [debug] [Thread-1  ]: Began executing node test.weather_restaurants.assert_all_cities_present
+[0m12:05:26.487273 [debug] [Thread-4  ]: Began executing node test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb
+[0m12:05:26.493574 [debug] [Thread-2  ]: Began executing node test.weather_restaurants.assert_dining_score_range
+[0m12:05:26.498136 [debug] [Thread-1  ]: Writing runtime sql for node "test.weather_restaurants.assert_all_cities_present"
+[0m12:05:26.499411 [debug] [Thread-3  ]: Began executing node test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9
+[0m12:05:26.504094 [debug] [Thread-4  ]: Writing runtime sql for node "test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb"
+[0m12:05:26.509958 [debug] [Thread-2  ]: Writing runtime sql for node "test.weather_restaurants.assert_dining_score_range"
+[0m12:05:26.517291 [debug] [Thread-3  ]: Writing runtime sql for node "test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9"
+[0m12:05:26.524945 [debug] [Thread-1  ]: Using postgres connection "test.weather_restaurants.assert_all_cities_present"
+[0m12:05:26.526341 [debug] [Thread-2  ]: Using postgres connection "test.weather_restaurants.assert_dining_score_range"
+[0m12:05:26.528778 [debug] [Thread-1  ]: On test.weather_restaurants.assert_all_cities_present: BEGIN
+[0m12:05:26.530927 [debug] [Thread-2  ]: On test.weather_restaurants.assert_dining_score_range: BEGIN
+[0m12:05:26.532077 [debug] [Thread-3  ]: Using postgres connection "test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9"
+[0m12:05:26.533765 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:05:26.535304 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m12:05:26.536608 [debug] [Thread-4  ]: Using postgres connection "test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb"
+[0m12:05:26.537594 [debug] [Thread-3  ]: On test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9: BEGIN
+[0m12:05:26.541880 [debug] [Thread-4  ]: On test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb: BEGIN
+[0m12:05:26.543434 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m12:05:26.544937 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m12:05:26.546153 [debug] [Thread-2  ]: SQL status: BEGIN in 0.011 seconds
+[0m12:05:26.547435 [debug] [Thread-1  ]: SQL status: BEGIN in 0.014 seconds
+[0m12:05:26.550504 [debug] [Thread-2  ]: Using postgres connection "test.weather_restaurants.assert_dining_score_range"
+[0m12:05:26.551866 [debug] [Thread-1  ]: Using postgres connection "test.weather_restaurants.assert_all_cities_present"
+[0m12:05:26.553746 [debug] [Thread-2  ]: On test.weather_restaurants.assert_dining_score_range: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "test.weather_restaurants.assert_dining_score_range"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT * FROM "airflow"."dbt_weather_restaurants"."mart_city_dining_score"
+WHERE dining_score < 0 OR dining_score > 10
+      
+    ) dbt_internal_test
+[0m12:05:26.555097 [debug] [Thread-3  ]: SQL status: BEGIN in 0.012 seconds
+[0m12:05:26.556043 [debug] [Thread-1  ]: On test.weather_restaurants.assert_all_cities_present: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "test.weather_restaurants.assert_all_cities_present"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT ingestion_date, COUNT(DISTINCT city_key) AS city_count
+FROM "airflow"."dbt_weather_restaurants"."mart_city_dining_score"
+GROUP BY ingestion_date
+HAVING COUNT(DISTINCT city_key) < 4
+      
+    ) dbt_internal_test
+[0m12:05:26.556742 [debug] [Thread-4  ]: SQL status: BEGIN in 0.012 seconds
+[0m12:05:26.558129 [debug] [Thread-3  ]: Using postgres connection "test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9"
+[0m12:05:26.559519 [debug] [Thread-2  ]: SQL status: SELECT 1 in 0.002 seconds
+[0m12:05:26.562462 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.002 seconds
+[0m12:05:26.563424 [debug] [Thread-4  ]: Using postgres connection "test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb"
+[0m12:05:26.564463 [debug] [Thread-3  ]: On test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select city_key
+from "airflow"."dbt_weather_restaurants"."mart_city_dining_score"
+where city_key is null
+
+
+
+      
+    ) dbt_internal_test
+[0m12:05:26.572848 [debug] [Thread-2  ]: On test.weather_restaurants.assert_dining_score_range: ROLLBACK
+[0m12:05:26.576210 [debug] [Thread-1  ]: On test.weather_restaurants.assert_all_cities_present: ROLLBACK
+[0m12:05:26.577426 [debug] [Thread-4  ]: On test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select city_key
+from "airflow"."dbt_weather_restaurants"."stg_air_quality"
+where city_key is null
+
+
+
+      
+    ) dbt_internal_test
+[0m12:05:26.579331 [debug] [Thread-2  ]: On test.weather_restaurants.assert_dining_score_range: Close
+[0m12:05:26.580519 [debug] [Thread-3  ]: SQL status: SELECT 1 in 0.002 seconds
+[0m12:05:26.581788 [debug] [Thread-1  ]: On test.weather_restaurants.assert_all_cities_present: Close
+[0m12:05:26.585164 [debug] [Thread-4  ]: SQL status: SELECT 1 in 0.002 seconds
+[0m12:05:26.590523 [debug] [Thread-3  ]: On test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9: ROLLBACK
+[0m12:05:26.587010 [info ] [Thread-2  ]: 2 of 6 PASS assert_dining_score_range .......................................... [[32mPASS[0m in 0.20s]
+[0m12:05:26.593472 [info ] [Thread-1  ]: 1 of 6 PASS assert_all_cities_present .......................................... [[32mPASS[0m in 0.21s]
+[0m12:05:26.598918 [debug] [Thread-4  ]: On test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb: ROLLBACK
+[0m12:05:26.600917 [debug] [Thread-3  ]: On test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9: Close
+[0m12:05:26.602816 [debug] [Thread-2  ]: Finished running node test.weather_restaurants.assert_dining_score_range
+[0m12:05:26.604992 [debug] [Thread-1  ]: Finished running node test.weather_restaurants.assert_all_cities_present
+[0m12:05:26.606927 [debug] [Thread-4  ]: On test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb: Close
+[0m12:05:26.610086 [debug] [Thread-2  ]: Began running node test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f
+[0m12:05:26.608791 [info ] [Thread-3  ]: 3 of 6 PASS not_null_mart_city_dining_score_city_key ........................... [[32mPASS[0m in 0.22s]
+[0m12:05:26.612382 [debug] [Thread-1  ]: Began running node test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63
+[0m12:05:26.614866 [info ] [Thread-4  ]: 4 of 6 PASS not_null_stg_air_quality_city_key .................................. [[32mPASS[0m in 0.22s]
+[0m12:05:26.617462 [info ] [Thread-2  ]: 5 of 6 START test not_null_stg_restaurants_restaurant_id ....................... [RUN]
+[0m12:05:26.620179 [debug] [Thread-3  ]: Finished running node test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9
+[0m12:05:26.622103 [info ] [Thread-1  ]: 6 of 6 START test not_null_stg_weather_city_key ................................ [RUN]
+[0m12:05:26.624189 [debug] [Thread-4  ]: Finished running node test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb
+[0m12:05:26.626226 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly test.weather_restaurants.assert_dining_score_range, now test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f)
+[0m12:05:26.628653 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.weather_restaurants.assert_all_cities_present, now test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63)
+[0m12:05:26.631519 [debug] [Thread-2  ]: Began compiling node test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f
+[0m12:05:26.633081 [debug] [Thread-1  ]: Began compiling node test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63
+[0m12:05:26.651182 [debug] [Thread-2  ]: Writing injected SQL for node "test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f"
+[0m12:05:26.656274 [debug] [Thread-1  ]: Writing injected SQL for node "test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63"
+[0m12:05:26.665371 [debug] [Thread-1  ]: Began executing node test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63
+[0m12:05:26.672122 [debug] [Thread-2  ]: Began executing node test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f
+[0m12:05:26.676371 [debug] [Thread-1  ]: Writing runtime sql for node "test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63"
+[0m12:05:26.682079 [debug] [Thread-2  ]: Writing runtime sql for node "test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f"
+[0m12:05:26.690763 [debug] [Thread-1  ]: Using postgres connection "test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63"
+[0m12:05:26.692037 [debug] [Thread-2  ]: Using postgres connection "test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f"
+[0m12:05:26.693677 [debug] [Thread-1  ]: On test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63: BEGIN
+[0m12:05:26.695197 [debug] [Thread-2  ]: On test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f: BEGIN
+[0m12:05:26.696226 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:05:26.697151 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m12:05:26.703581 [debug] [Thread-1  ]: SQL status: BEGIN in 0.007 seconds
+[0m12:05:26.704883 [debug] [Thread-1  ]: Using postgres connection "test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63"
+[0m12:05:26.706100 [debug] [Thread-2  ]: SQL status: BEGIN in 0.009 seconds
+[0m12:05:26.706986 [debug] [Thread-1  ]: On test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select city_key
+from "airflow"."dbt_weather_restaurants"."stg_weather"
+where city_key is null
+
+
+
+      
+    ) dbt_internal_test
+[0m12:05:26.708152 [debug] [Thread-2  ]: Using postgres connection "test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f"
+[0m12:05:26.709654 [debug] [Thread-2  ]: On test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f: /* {"app": "dbt", "dbt_version": "1.9.0b2", "profile_name": "weather_restaurants", "target_name": "dev", "node_id": "test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select restaurant_id
+from "airflow"."dbt_weather_restaurants"."stg_restaurants"
+where restaurant_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m12:05:26.710849 [debug] [Thread-1  ]: SQL status: SELECT 1 in 0.002 seconds
+[0m12:05:26.714288 [debug] [Thread-1  ]: On test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63: ROLLBACK
+[0m12:05:26.715925 [debug] [Thread-1  ]: On test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63: Close
+[0m12:05:26.717275 [info ] [Thread-1  ]: 6 of 6 PASS not_null_stg_weather_city_key ...................................... [[32mPASS[0m in 0.09s]
+[0m12:05:26.718792 [debug] [Thread-1  ]: Finished running node test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63
+[0m12:05:26.723102 [debug] [Thread-2  ]: SQL status: SELECT 1 in 0.011 seconds
+[0m12:05:26.726371 [debug] [Thread-2  ]: On test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f: ROLLBACK
+[0m12:05:26.728204 [debug] [Thread-2  ]: On test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f: Close
+[0m12:05:26.729718 [info ] [Thread-2  ]: 5 of 6 PASS not_null_stg_restaurants_restaurant_id ............................. [[32mPASS[0m in 0.10s]
+[0m12:05:26.731569 [debug] [Thread-2  ]: Finished running node test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f
+[0m12:05:26.735140 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:26.736338 [debug] [MainThread]: On master: BEGIN
+[0m12:05:26.737393 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:05:26.743989 [debug] [MainThread]: SQL status: BEGIN in 0.006 seconds
+[0m12:05:26.745549 [debug] [MainThread]: On master: COMMIT
+[0m12:05:26.746664 [debug] [MainThread]: Using postgres connection "master"
+[0m12:05:26.747752 [debug] [MainThread]: On master: COMMIT
+[0m12:05:26.749266 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:05:26.750571 [debug] [MainThread]: On master: Close
+[0m12:05:26.751997 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:05:26.752912 [debug] [MainThread]: Connection 'test.weather_restaurants.not_null_stg_weather_city_key.f0d7433c63' was properly closed.
+[0m12:05:26.753922 [debug] [MainThread]: Connection 'test.weather_restaurants.not_null_stg_restaurants_restaurant_id.df7b642a2f' was properly closed.
+[0m12:05:26.755098 [debug] [MainThread]: Connection 'test.weather_restaurants.not_null_mart_city_dining_score_city_key.6b25401de9' was properly closed.
+[0m12:05:26.755981 [debug] [MainThread]: Connection 'test.weather_restaurants.not_null_stg_air_quality_city_key.c3e270a1fb' was properly closed.
+[0m12:05:26.756928 [info ] [MainThread]: 
+[0m12:05:26.757866 [info ] [MainThread]: Finished running 6 data tests in 0 hours 0 minutes and 0.54 seconds (0.54s).
+[0m12:05:26.760474 [debug] [MainThread]: Command end result
+[0m12:05:26.936893 [info ] [MainThread]: 
+[0m12:05:26.938267 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:05:26.939513 [info ] [MainThread]: 
+[0m12:05:26.940643 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m12:05:26.943010 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.6899676, "process_user_time": 4.827897, "process_kernel_time": 0.392642, "process_mem_max_rss": "107684", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:05:26.944864 [debug] [MainThread]: Command `dbt test` succeeded at 12:05:26.944617 after 2.69 seconds
+[0m12:05:26.945768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eba5f8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743eb908f400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743ebb10cc10>]}
+[0m12:05:26.946961 [debug] [MainThread]: Flushing usage events
+[0m12:05:27.587914 [debug] [MainThread]: An error was encountered while trying to flush usage events

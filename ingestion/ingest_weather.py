@@ -10,7 +10,7 @@ import json
 import os
 from datetime import datetime, timezone
 from ingestion.date_utils import get_target_dates, target_datetime_iso
-
+from ingestion.object_storage import upload_json
 # Cities configuration
 CITIES = {
     "paris": {"lat": 48.8566, "lon": 2.3522, "name": "Paris"},
@@ -135,6 +135,8 @@ def save_raw(city_key: str, data: dict, date_str: str):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+    upload_json("weather", date_str, city_key, data)
+    
     print(f"[Weather] Saved: {filename}")
     return filename
 

@@ -12,7 +12,7 @@ import math
 import random
 from datetime import datetime, timezone
 from ingestion.date_utils import get_target_dates, target_datetime_iso, target_overpass_datetime
-
+from ingestion.object_storage import upload_json
 CITIES = {
     "paris":    {"name": "Paris",    "bbox": (48.815, 2.224, 48.902, 2.470)},
     "shanghai": {"name": "Shanghai", "bbox": (31.0, 121.2, 31.5, 121.8)},
@@ -314,6 +314,9 @@ def save_raw(city_key, data, date_str):
     filename = os.path.join(path, f"{city_key}.json")
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+    upload_json("restaurants", date_str, city_key, data)
+    
     print(f"[Restaurants] Saved: {filename} ({data['_metadata']['total_elements']} items)")
     return filename
 

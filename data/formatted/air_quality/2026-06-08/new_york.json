@@ -1,0 +1,17 @@
+{
+  "city_key": "new_york",
+  "city_name": "New York",
+  "ingested_at_utc": "2026-06-08T12:03:42.115955+00:00",
+  "ingestion_date": "2026-06-08",
+  "selected_hour_utc": "2026-06-08T12:00",
+  "pm10": 9.3,
+  "pm2_5": 8.7,
+  "carbon_monoxide": 134.0,
+  "nitrogen_dioxide": 7.6,
+  "sulphur_dioxide": 1.4,
+  "ozone": 61.0,
+  "dust": 1.0,
+  "uv_index": 1.45,
+  "us_aqi": 31,
+  "european_aqi": 24
+}

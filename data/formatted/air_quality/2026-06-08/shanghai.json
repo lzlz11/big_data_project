@@ -1,0 +1,17 @@
+{
+  "city_key": "shanghai",
+  "city_name": "Shanghai",
+  "ingested_at_utc": "2026-06-08T12:03:41.502800+00:00",
+  "ingestion_date": "2026-06-08",
+  "selected_hour_utc": "2026-06-08T12:00",
+  "pm10": 46.9,
+  "pm2_5": 40.2,
+  "carbon_monoxide": 308.0,
+  "nitrogen_dioxide": 76.7,
+  "sulphur_dioxide": 16.3,
+  "ozone": 36.0,
+  "dust": 1.0,
+  "uv_index": 0.0,
+  "us_aqi": 81,
+  "european_aqi": 61
+}

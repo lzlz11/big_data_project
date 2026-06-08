@@ -1,0 +1,88 @@
+{
+  "latitude": 40.710335,
+  "longitude": -73.99308,
+  "generationtime_ms": 0.5053281784057617,
+  "utc_offset_seconds": -14400,
+  "timezone": "America/New_York",
+  "timezone_abbreviation": "GMT-4",
+  "elevation": 32.0,
+  "current_units": {
+    "time": "iso8601",
+    "interval": "seconds",
+    "temperature_2m": "°C",
+    "relative_humidity_2m": "%",
+    "precipitation": "mm",
+    "weather_code": "wmo code",
+    "wind_speed_10m": "km/h"
+  },
+  "current": {
+    "time": "2026-06-08T08:00",
+    "interval": 900,
+    "temperature_2m": 18.8,
+    "relative_humidity_2m": 60,
+    "precipitation": 0.0,
+    "weather_code": 0,
+    "wind_speed_10m": 13.0
+  },
+  "daily_units": {
+    "time": "iso8601",
+    "temperature_2m_max": "°C",
+    "temperature_2m_min": "°C",
+    "precipitation_sum": "mm",
+    "weather_code": "wmo code"
+  },
+  "daily": {
+    "time": [
+      "2026-06-08",
+      "2026-06-09",
+      "2026-06-10",
+      "2026-06-11",
+      "2026-06-12",
+      "2026-06-13",
+      "2026-06-14"
+    ],
+    "temperature_2m_max": [
+      24.2,
+      27.0,
+      26.2,
+      31.1,
+      27.8,
+      24.9,
+      29.6
+    ],
+    "temperature_2m_min": [
+      16.1,
+      14.2,
+      19.1,
+      20.8,
+      18.8,
+      18.3,
+      20.8
+    ],
+    "precipitation_sum": [
+      0.0,
+      0.0,
+      7.9,
+      4.0,
+      2.4,
+      1.5,
+      1.5
+    ],
+    "weather_code": [
+      3,
+      3,
+      81,
+      80,
+      80,
+      55,
+      51
+    ]
+  },
+  "_metadata": {
+    "city_key": "new_york",
+    "city_name": "New York",
+    "ingested_at": "2026-06-08T12:03:42.093107+00:00",
+    "source": "open-meteo.com",
+    "target_date": "2026-06-08"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "city_key": "london",
+  "city_name": "London",
+  "ingested_at_utc": "2026-06-08T12:03:41.807109+00:00",
+  "ingestion_date": "2026-06-08",
+  "selected_hour_utc": "2026-06-08T12:00",
+  "pm10": 7.7,
+  "pm2_5": 5.4,
+  "carbon_monoxide": 135.0,
+  "nitrogen_dioxide": 16.5,
+  "sulphur_dioxide": 0.8,
+  "ozone": 55.0,
+  "dust": 0.0,
+  "uv_index": 3.7,
+  "us_aqi": 28,
+  "european_aqi": 22
+}
