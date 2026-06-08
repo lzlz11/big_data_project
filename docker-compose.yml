@@ -120,6 +120,15 @@ services:
       - minio-data:/data
     restart: always
 
+  spark:
+    image: spark:3.5.8-python3
+    command: tail -f /dev/null
+    volumes:
+      - ./data:/opt/airflow/data
+      - ./spark_jobs:/opt/airflow/spark_jobs
+    ports:
+      - 8081:4040
+    restart: always
 
 volumes:
   postgres-db-volume:

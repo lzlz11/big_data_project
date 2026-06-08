@@ -62,6 +62,14 @@ with DAG(
         python_callable=ingest_air_quality,
     )
 
+    task_spark_raw_to_parquet = BashOperator(
+    task_id="spark_raw_to_parquet",
+    bash_command="""
+        docker exec big_data_project-spark-1 \
+        spark-submit /opt/airflow/spark_jobs/raw_to_parquet.py {{ ds }}
+    """,
+    )
+    
     task_format = PythonOperator(
         task_id="format_to_postgres",
         python_callable=run_formatting,
@@ -97,5 +105,6 @@ with DAG(
     # Pipeline:
     # start → [ingest_weather, ingest_restaurants, ingest_air_quality] → format → dbt_run → dbt_test → index → end
     start >> [task_ingest_weather, task_ingest_restaurants, task_ingest_air_quality]
-    [task_ingest_weather, task_ingest_restaurants, task_ingest_air_quality] >> task_format
+    [task_ingest_weather, task_ingest_restaurants, task_ingest_air_quality] >> task_spark_raw_to_parquet
+    task_spark_raw_to_parquet >> task_format
     task_format >> task_dbt_run >> task_dbt_test >> task_index >> end
